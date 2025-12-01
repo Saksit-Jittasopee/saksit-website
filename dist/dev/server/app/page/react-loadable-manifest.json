@@ -1,0 +1,11 @@
+{
+  "[project]/components/ContactMap.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/ContactMap.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_6d16aa7c._.js",
+      "static/chunks/components_ContactMap_tsx_e4008fd5._.js",
+      "static/chunks/node_modules_leaflet_dist_leaflet_ef5f0413.css",
+      "static/chunks/components_ContactMap_tsx_3150ab73._.js"
+    ]
+  }
+}
