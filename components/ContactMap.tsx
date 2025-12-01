@@ -4,17 +4,21 @@ import { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; 
 import L from 'leaflet';
+import icon from 'leaflet/dist/images/marker-icon.png';
+import icon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
 export default function ContactMap() {
 
   useEffect(() => {
-    // @ts-ignore
+    
+    //@ts-ignore
     delete L.Icon.Default.prototype._getIconUrl;
 
     L.Icon.Default.mergeOptions({
-      iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png').default.src,
-      iconUrl: require('leaflet/dist/images/marker-icon.png').default.src,
-      shadowUrl: require('leaflet/dist/images/marker-shadow.png').default.src,
+      iconRetinaUrl: icon2x.src,
+      iconUrl: icon.src,
+      shadowUrl: iconShadow.src,
     });
   }, []);
 
