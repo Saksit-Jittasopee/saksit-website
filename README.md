@@ -36,18 +36,18 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 ## Tech Stacks
--Framework: Next.js 16 with App Router
+<ul>
+<li>Framework: Next.js 16 with App Router</li>
 <br>
--Language: TypeScript
+<li>Language: TypeScript</li>
 <br>
--Map: Leaflet-OpenStreetMap
+<li>Map: Leaflet-OpenStreetMap</li>
 <br>
--Styling: Tailwind CSS
+<li>Styling: Tailwind CSS</li>
 <br>
--State Management: TanStack Query (React Query)
+<li>Icon: Icon Packs (https://www.iconpacks.net/free-icon/user-3296.html)</li>
 <br>
--Icons: Icon Packs
+<li>Package Manager: npm</li>
 <br>
-https://www.iconpacks.net/free-icon/user-3296.html
-<br>
--Package Manager: npm
+<li>Deployment: GitHub.io</li>
+</ul>
