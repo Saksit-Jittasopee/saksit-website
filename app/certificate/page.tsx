@@ -38,7 +38,7 @@ export default function Certificate() {
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start">
               <div className="m-5 flex flex-row flex-wrap justify-center border border-blue-500 rounded-xl text-center bg-gray-100 p-5 max-w-4xl lg:max-w-6xl shadow-xl">
                     <div className="m-2 flex flex-col items-center sm:flex-row sm:justify-center">
-                      <Image src={CCNACertificate} alt="Computer Networks CCNA Certificate" width={200} height={50} className='mt-2 ml-0 sm:ml-5'></Image>
+                      <Image src={CCNACertificate} alt="Computer Networks CCNA Certificate" width={320} height={50} className='mt-2 ml-0 sm:ml-5'></Image>
                       <Image src={CCNABadges} alt="Computer Networks CCNA Badges" width={200} height={50} className='mt-2 ml-0 sm:ml-5'></Image>
                   </div>
                   <div>

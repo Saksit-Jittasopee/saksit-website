@@ -9,11 +9,6 @@ import mahidol from "@/public/assets/Home/Mahidol.png";
 import kpn from "@/public/assets/Home/KPN.png";
 import { motion } from "framer-motion";
 import ContactMapLoader from "@/components/ContactMapLoader";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
 import DataAnalyticsCer from "@/public/assets/Certificate/DataAnalyticsEssentialsCer.png";
 import DataAnalyticsBadges from "@/public/assets/Certificate/data-analytics-essentials-badges.png"
 import IntroDataScienceCer from "@/public/assets/Certificate/IntroductiontoDataScience.png"
@@ -58,21 +53,32 @@ import pie from "@/public/assets/Projects/pie.png";
 import line from "@/public/assets/Projects/line.png";
 import histogram_python from "@/public/assets/Projects/histogram.png";
 import CV from "@/components/CV"
+import { IoMdMail} from "react-icons/io";
+import { IoLogoJavascript, IoLogoCss3, IoLibrary } from "react-icons/io5";
+import { FaFacebook, FaInstagram, FaGithub, FaLinkedin, FaCode, FaDatabase, FaPython, FaJava, FaHtml5, FaReact, FaNodeJs, FaToolbox } from 'react-icons/fa';
+import { FaGolang } from "react-icons/fa6";
+import { SiCplusplus, SiC, SiTypescript, SiR, SiNumpy, SiPandas, SiScikitlearn, SiPytorch, SiTensorflow, SiOpencv, SiExpress, SiAxios, SiTailwindcss, SiLooker, SiTableau, SiGooglesheets, SiPostman } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+import { MdOutlineWebAsset } from "react-icons/md";
+import { RiNextjsFill, RiFileExcel2Fill } from "react-icons/ri";
+import { DiVisualstudio } from "react-icons/di";
+import ProjectCard from '@/components/ProjectCard';
 
 export default function Home() {
   return (
     <div className='w-full overflow-x-hidden'>
   <Navbar></Navbar>
   
-  <div className="mt-10 flex flex-col items-center justify-center m-5 md:flex-row md:items-start md:justify-start"> 
-    <h1 className="mt-5 ml-0 text-center md:ml-10 pt-2 text-4xl font-bold text-blue-900 md:text-left">
-      Hi, My name is Saksit Jittasopee. <br /><br /> 
-      I'm a 2nd Year Student at Mahidol University. <br /><br /> 
-      I'm studying B.Sc in Digital Science & Technology (DST) <br /> 
-      at Faculty of Information Communication and Technology.
-    </h1>
-    <Image src={image} alt="Me" width={250} height={150} className="mt-5 ml-0 rounded-xl hover:scale-105 md:ml-10"></Image>
+  <div className="mt-20 flex flex-col items-center justify-center m-5 md:flex-row md:items-start md:justify-start">
+  <div className="mt-5 ml-0 text-center md:ml-10 pt-2 md:text-left">
+    <h1 className="text-5xl font-bold">Hi, I'm <span className="text-blue-600">Saksit Jittasopee</span></h1>
+    <br></br>
+    <h2 className="mt-4 text-5xl font-bold">I'm a 2nd Year Student at Mahidol University.</h2>
+    <br></br>
+    <p className="mt-4 text-lg">I'm studying B.Sc in Digital Science & Technology (DST) at Faculty of Information and Communication Technology. In the future I would like to study in Data Science's majors and work in Data Science role.</p>
   </div>
+  <Image src={image} alt="Me" width={250} height={150} className="mt-5 ml-0 rounded-xl hover:scale-105 md:ml-10"></Image>
+</div>
   
   <div className="flex flex-row justify-center ml-0 md:justify-start md:ml-10">
     <CV></CV>
@@ -85,12 +91,97 @@ export default function Home() {
     transition={{ duration: 0.8, ease: "easeOut" }}
     viewport={{ once: true, amount: 0.3 }}
   >
-    <div className='bg-gray-100'>
+    <div>
       <h1 className="m-5 text-4xl font-bold">About Me</h1>
       <h1 className="m-5 text-xl flex justify-center text-center ml-0 md:justify-start md:ml-20 md:text-left">
-        I'm a 2nd Year Student at Mahidol University. Currently, I'm studying B.Sc in Digital Science & Technology (DST) at Faculty of Information Communication and Technology. I can write various programming languages such as Python, Java, HTML, CSS (Bootstrap & Tailwind), JavaScript, TypeScript, C, C++, C#, R, SQL and Go. In Python I can also write Numpy, Pandas, Matplotlib, Scikit-learn and OpenCV. I'm interested in Data Science and wish to study more in the future. I can use various software such as Microsoft Word, Powerpoint, Excel, Power BI, Google Looker Studio, Tableau Public, Visual Studio Code, IBM SPSS Statistics, Postman, Oracle VirtualBox and more.
+        I'm a 2nd Year Student at Mahidol University. Currently, I'm studying B.Sc in Digital Science & Technology (DST) at Faculty of Information and Communication Technology. I can write various programming languages such as Python, Java, HTML, CSS (Bootstrap & Tailwind), JavaScript, TypeScript, C, C++, C#, R, SQL and Go. In Python I can also write NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, Tensorflow and OpenCV. I'm interested in Data Science and wish to study more in the future. I can use various software such as Microsoft Word, Powerpoint, Excel, Power BI, Google Looker Studio, Tableau Public, Visual Studio Code, IBM SPSS Statistics, Postman, Oracle VirtualBox and more.
       </h1>
     </div>
+  </motion.div>
+
+  <motion.div
+    className="mt-20 text-center grid grid-cols-1"
+    initial={{ opacity: 0, y: 80 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    viewport={{ once: true, amount: 0.3 }}
+  >
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ml-5">
+          <div className="rounded-2xl p-8 shadow-sm border border-blue-600 transition hover:shadow-md">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                 <FaCode className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold">Languages</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+                <FaPython size={25} className="cursor-pointer hover:scale-110"/>
+                <FaJava size={25} className="cursor-pointer hover:scale-110"/>
+                <FaHtml5 size={25} className="cursor-pointer hover:scale-110"/>
+                <IoLogoCss3 size={25} className="cursor-pointer hover:scale-110"/>
+                <IoLogoJavascript size={25} className="cursor-pointer hover:scale-110"/>
+                <SiTypescript size={25} className="cursor-pointer hover:scale-110"/>
+                <SiC size={25} className="cursor-pointer hover:scale-110"/>
+                <SiCplusplus size={25} className="cursor-pointer hover:scale-110"/>
+                <TbBrandCSharp size={25} className="cursor-pointer hover:scale-110"/>
+                <SiR size={25} className="cursor-pointer hover:scale-110"/>
+                <FaDatabase size={25} className="cursor-pointer hover:scale-110"/>
+                <FaGolang size={25} className="cursor-pointer hover:scale-110"/>
+            </div>
+          </div>
+
+          <div className="rounded-2xl p-8 shadow-sm border border-blue-600 transition hover:shadow-md">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                 <IoLibrary className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold">Machine Learning / AI Libraries</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+                <SiNumpy size={25} className="cursor-pointer hover:scale-110"/>
+                <SiPandas size={25} className="cursor-pointer hover:scale-110"/>
+                <SiScikitlearn size={25} className="cursor-pointer hover:scale-110"/>
+                <SiPytorch size={25} className="cursor-pointer hover:scale-110"/>
+                <SiTensorflow size={25} className="cursor-pointer hover:scale-110"/>
+                <SiOpencv size={25} className="cursor-pointer hover:scale-110"/>
+            </div>
+          </div>
+
+          <div className="rounded-2xl p-8 shadow-sm border border-blue-600 transition hover:shadow-md">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                 <MdOutlineWebAsset className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold">Web Frameworks & APIs</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+                <FaReact size={25} className="cursor-pointer hover:scale-110"/>
+                <FaNodeJs size={25} className="cursor-pointer hover:scale-110"/>
+                <RiNextjsFill size={25} className="cursor-pointer hover:scale-110"/>
+                <SiExpress size={25} className="cursor-pointer hover:scale-110"/>
+                <SiAxios size={25} className="cursor-pointer hover:scale-110"/>
+                <SiTailwindcss size={25} className="cursor-pointer hover:scale-110"/>
+            </div>
+          </div>
+
+          <div className="rounded-2xl p-8 shadow-sm border border-blue-600 transition hover:shadow-md">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                 <FaToolbox className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold">Tools & Platforms</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+                <FaGithub size={25} className="cursor-pointer hover:scale-110"/>
+                <DiVisualstudio size={25} className="cursor-pointer hover:scale-110"/>
+                <RiFileExcel2Fill size={25} className="cursor-pointer hover:scale-110"/>
+                <SiLooker size={25} className="cursor-pointer hover:scale-110"/>
+                <SiGooglesheets size={25} className="cursor-pointer hover:scale-110"/>
+                <SiTableau size={25} className="cursor-pointer hover:scale-110"/>
+                <SiPostman size={25} className="cursor-pointer hover:scale-110"/>
+            </div>
+          </div>
+  </div>
   </motion.div>
   
   <motion.div
@@ -110,21 +201,12 @@ export default function Home() {
     viewport={{ once: true, amount: 0.1 }}
   >
     <div className="flex justify-center"> 
-    <div className="m-5 flex flex-row flex-wrap justify-center border border-blue-500 rounded-xl text-center bg-gray-100 p-5 max-w-4xl lg:max-w-6xl shadow-xl">
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={currentchamp1} alt="Current Wrestling Champions 1" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={currentchamp2} alt="Current Wrestling Champions 2" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div>
-        <a href="https://saksit-jittasopee.github.io/current-champions/" target="_blank" className="m-5 mt-5 text-l italic flex justify-center underline hover:scale-105">Current Wrestling Champions Website</a>
-      </div>
-
-      <div>
-        <h1 className="mt-2 ml-5 mb-5 mr-5 text-l text-gray-500">I'm a wrestling fan. I love watching professional wrestling so I made this website to show the current champions in major promotions like (WWE, NXT, AEW, etc.) by using React & Vite and use GitHub to deploy. This is my very first web project so It may look simple and basic but I am very proud with this work.</h1>
-      </div>
-    </div>
+      <ProjectCard 
+    title="Current Wrestling Champions"
+    description="I'm a wrestling fan. I love watching professional wrestling so I made this website to show the current champions in major promotions like (WWE, NXT, AEW, etc.) by using React & Vite and use GitHub to deploy. This is my very first web project so It may look simple and basic but I am very proud with this work."
+    imageSrc={currentchamp1}
+    link="https://saksit-jittasopee.github.io/current-champions/"
+      />
   </div>
   </motion.div>
 
@@ -134,83 +216,31 @@ export default function Home() {
     transition={{ duration: 0.8 }}
     viewport={{ once: true, amount: 0.1 }}
   >
-      <div className="flex justify-center"> 
-    <div className="m-5 flex flex-row flex-wrap justify-center border border-blue-500 rounded-xl text-center bg-gray-100 p-5 max-w-4xl lg:max-w-6xl shadow-xl">
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={teasmoker} alt="Lab 2" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={scatterplot} alt="Lab 3" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={boxplot} alt="Lab 3" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={grazedchart} alt="Lab 3" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={histogram} alt="Lab 4" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={qqgroupa} alt="Lab 4" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={qqgroupb} alt="Lab 4" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={qqgroupc} alt="Lab 4" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div>
-        <a href="https://github.com/Saksit-Jittasopee/R-Programming-Lab-Lesson" target="_blank" className="m-5 mt-5 text-l italic flex justify-center underline hover:scale-105">Assignment Link</a>
-      </div>
-      <div>
-        <h1 className="mt-2 ml-5 mb-5 mr-5 text-l text-gray-500">This is an in-class lab assignment for "Applied Statistics for Computing" by using R with the group of 2. We have assigned an assignment to make histogram, scatterplot, qqplot, boxplot and many more using R to read a data from CSV file.</h1>
-      </div>
-    </div>
+    <div className="flex justify-center"> 
+      <ProjectCard 
+    title="R-Assignments-Project"
+    description="This is an in-class lab assignment for 'Applied Statistics for Computing' by using R with the group of 2. We have assigned an assignment to make histogram, scatterplot, qqplot, boxplot and many more using R to read a data from CSV file."
+    imageSrc={teasmoker}
+    link="https://github.com/Saksit-Jittasopee/R-Programming-Lab-Lesson"
+      />
   </div>
   </motion.div>
 
-    <motion.div
+  <motion.div
     initial={{ opacity: 0, y: 100 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
     viewport={{ once: true, amount: 0.1 }}
   >
-      <div className="flex justify-center"> 
-    <div className="m-5 flex flex-row flex-wrap justify-center border border-blue-500 rounded-xl text-center bg-gray-100 p-5 max-w-4xl lg:max-w-6xl shadow-xl">
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp1} alt="Ayema5kon1" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp2} alt="Ayema5kon2" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp3} alt="Ayema5kon3" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp4} alt="Ayema5kon4" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp5} alt="Ayema5kon5" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp6} alt="Ayema5kon6" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp7} alt="Ayema5kon7" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div className="w-full sm:w-1/2 p-2">
-        <Image src={webapp8} alt="Ayema5kon8" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-      </div>
-      <div>
-        <a href="https://drive.google.com/drive/folders/1MGfRxQvCkzua-zsm7XosIgSfb_nGPLRe" target="_blank" className="m-5 mt-5 text-l italic flex justify-center underline hover:scale-105">CD Keys Website</a>
-      </div>
-      <div>
-        <h1 className="mt-2 ml-5 mb-5 mr-5 text-l text-gray-500">This is a project for "Web Technologies and Application" Class. We made the CD-Keys Website using React, Vite, and JavaScript to develop the frontend part and Node.Js and Javascript to develop backend and using MySQL as Database for this project. My role in this project was backend part doing the Authentication using JSON Web Token, Steam API Players Count, Search, MySQL Databases, and also the frontend part by using API to connect with backend and databases.</h1>
-      </div>
-    </div>
+    <div className="flex justify-center"> 
+      <ProjectCard 
+    title="CD Keys Website"
+    description="This is a project for 'Web Technologies and Application' Class. We made the CD-Keys Website using React, Vite, and JavaScript to develop the frontend part and Node.Js and Javascript to develop backend and using MySQL as Database for this project. My role in this project was backend part doing the Authentication using JSON Web Token, Steam API Players Count, Search, MySQL Databases, and also the frontend part by using API to connect with backend and databases."
+    imageSrc={webapp1}
+    link="https://github.com/WISHERCARTs/Ayema5kon-project"
+      />
   </div>
-      </motion.div>
+  </motion.div>
 
 <motion.div
     initial={{ opacity: 0, y: 100 }}
@@ -219,33 +249,13 @@ export default function Home() {
     viewport={{ once: true, amount: 0.1 }}
   >
   <div className="flex justify-center"> 
-      <div className="m-5 flex flex-row flex-wrap justify-center border border-blue-500 rounded-xl text-center bg-gray-100 p-5 max-w-4xl lg:max-w-6xl shadow-xl">
-        <div className="w-full sm:w-1/2 p-2">
-          <Image src={bar} alt="Lab 2" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-        </div>
-        <div className="w-full sm:w-1/2 p-2">
-          <Image src={barh} alt="Lab 3" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-        </div>
-        <div className="w-full sm:w-1/2 p-2">
-          <Image src={scatterplot_python} alt="Lab 3" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-        </div>
-        <div className="w-full sm:w-1/2 p-2">
-          <Image src={pie} alt="Lab 3" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-        </div>
-        <div className="w-full sm:w-1/2 p-2">
-          <Image src={line} alt="Lab 4" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-        </div>
-        <div className="w-full sm:w-1/2 p-2">
-          <Image src={histogram_python} alt="Lab 4" width={500} height={460} className='w-full h-auto shadow-l'></Image>
-        </div>
-        <div>
-          <a href="https://github.com/Saksit-Jittasopee/python-charts" target="_blank" className="m-5 mt-5 text-l italic flex justify-center underline hover:scale-105">GitHub Link</a>
-        </div>
-        <div>
-          <h1 className="mt-2 ml-5 mb-5 mr-5 text-l text-gray-500">This project using Python libraries (Pandas, Matplotlib) to create each type of charts from movies.csv like Bar Chart, Horizontal Bar Chart, Scatter Plot, Pie Chart, Line Chart, and Histogram.</h1>
-        </div>
-      </div>
-    </div>
+      <ProjectCard 
+    title="Python-Charts"
+    description="This project using Python libraries (Pandas, Matplotlib) to create each type of charts from movies.csv like Bar Chart, Horizontal Bar Chart, Scatter Plot, Pie Chart, Line Chart, and Histogram."
+    imageSrc={bar}
+    link="https://github.com/Saksit-Jittasopee/python-charts"
+      />
+  </div>
   </motion.div>
   
   <motion.div

@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from 'next/font/google';
 import ScrollToTopButton from '../components/ScrollToTopButton';
+import { Providers } from "../components/providers"
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -20,10 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en"  className={roboto.className} suppressHydrationWarning>
       <body>      
         <ScrollToTopButton/>
+        <Providers>
         {children}
+        </Providers>
       </body>
     </html>
   );
