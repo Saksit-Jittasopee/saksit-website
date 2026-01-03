@@ -17,7 +17,7 @@ export function ThemeToggle() {
 
   return (
     <button
-      className="p-2 rounded-md cursor-pointer"
+      className="p-2 rounded-md cursor-pointer hover:bg-blue-100"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? <IoSunny size={20}/> : <FaMoon size={20}/> }
