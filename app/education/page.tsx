@@ -18,13 +18,13 @@ export default function Education() {
         <h1 className="text-3xl font-bold">Education</h1>
       </div>
 
-      <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-3">                  
+      <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-5">                  
         
         <li className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-4 h-4 bg-blue-600 rounded-full -left-2 ring-4 ring-white dark:ring-gray-900">
             </span>
             
-            <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:shadow-md transition-shadow m-2">
+            <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:shadow-md transition-shadow m-2 mr-5">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
                     <div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
@@ -53,7 +53,7 @@ export default function Education() {
             <span className="absolute flex items-center justify-center w-4 h-4 bg-blue-600 rounded-full -left-2 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
             </span>
 
-            <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:shadow-md transition-shadow m-2">
+            <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:shadow-md transition-shadow m-2 mr-5">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
                     <div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">

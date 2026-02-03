@@ -1,13 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import { Providers } from "../components/providers"
 
-const roboto = Roboto({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '700'], // Specify the weights you want to use
-  variable: '--font-roboto', // Optional: for use with CSS variables
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -21,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"  className={roboto.className} suppressHydrationWarning>
+    <html lang="en"  className={inter.className} suppressHydrationWarning>
       <body>      
         <ScrollToTopButton/>
         <Providers>

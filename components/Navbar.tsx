@@ -20,7 +20,7 @@ export default function Navbar() {
   const activeLinkStyle = "text-blue-800 text-xl font-bold underline decoration-2 underline-offset-4";
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 shadow-sm border-b border-gray-200/50 bg-gray-300 text-gray-800 dark:dark backdrop-blur-sm transition-all duration-300">      
+      <nav className="fixed top-0 left-0 w-full z-[9999] shadow-sm border-b border-gray-200/50 backdrop-blur-md transition-all duration-300 bg-white/80 text-gray-900 dark:bg-slate-900/80 dark:text-white dark:border-gray-800">      
       <div className="max-w-7xl mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <Link href="/">
