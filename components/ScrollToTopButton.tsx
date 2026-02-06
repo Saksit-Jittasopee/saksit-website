@@ -1,46 +1,42 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-    const ScrollToTopButton = () => {
-      const [isVisible, setIsVisible] = useState(false);
+const ScrollToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-      const toggleVisibility = () => {
-        if (window.pageYOffset > 300) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
-      };
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
-      const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
-      useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
-        return () => {
-          window.removeEventListener('scroll', toggleVisibility);
-        };
-      }, []);
-
-      return (
-        <>
-          {isVisible && (
-            <button onClick={scrollToTop} className='border border-solid w-12 h-12 rounded-full bg-blue-500 text-white font-bold hover:scale-105 cursor-pointer'
-              style={{
-                position: 'fixed',
-                bottom: '20px',
-                right: '20px',
-                zIndex: '99',
-              }}>
-              ↑
-            </button>
-          )}
-        </>
-      );
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
     };
+  }, []);
 
-    export default ScrollToTopButton;
+  if (!isVisible) return null;
+
+  return (
+    <button 
+      onClick={scrollToTop} 
+      className='w-12 h-12 rounded-full bg-blue-500 text-white font-bold hover:scale-105 cursor-pointer shadow-lg flex items-center justify-center'
+      aria-label="Scroll to top"
+    >
+      ↑
+    </button>
+  );
+};
+
+export default ScrollToTopButton;
