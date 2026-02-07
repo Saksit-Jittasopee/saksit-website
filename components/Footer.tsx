@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const metadata = {
   title: 'Home - Saksit Jittasopee',
@@ -32,6 +30,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/saksitjittasopee/" className='ml-5 text-white hover:text-black' target="_blank"><FaInstagram size={20}/></a>
             <a href="https://github.com/Saksit-Jittasopee" className='ml-5 text-white hover:text-black' target="_blank"><FaGithub size={20}/></a>
             <a href="https://www.linkedin.com/in/saksit-jittasopee-743981382/" className='ml-5 text-white hover:text-black' target="_blank"><FaLinkedin size={20}/></a>
+            <a href="https://x.com/theshockedxd" className='ml-5 text-white hover:text-black' target="_blank"><FaXTwitter size={20}/></a>
         </div>
       </div>
       <div className="border-t border-gray-400 py-4">

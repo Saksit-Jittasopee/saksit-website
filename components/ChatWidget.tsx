@@ -107,7 +107,7 @@ export default function ChatWidget() {
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             className="mb-4 w-[320px] max-w-[calc(100vw-2rem)] bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden"
           >
-            <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white flex justify-between items-center">
+            <div className="p-3 bg-gradient-to-r from-blue-600 to-red-600 text-white flex justify-between items-center">
               <div className="flex items-center gap-2">
                 <div className="p-1.5 bg-white/20 rounded-full">
                   <Bot size={20} />
@@ -146,14 +146,14 @@ export default function ChatWidget() {
                   }`}
                 >
                   {m.role === "assistant" && (
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-green-500 flex items-center justify-center shrink-0">
                       <Bot size={14} className="text-black" />
                     </div>
                   )}
                   <div
                     className={`max-w-[80%] p-3 text-sm ${
                       m.role === "user"
-                        ? "bg-blue-600 text-black rounded-2xl rounded-tr-sm"
+                        ? "bg-blue-600 text-white rounded-2xl rounded-tr-sm"
                         : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 rounded-2xl rounded-tl-sm shadow-sm"
                     }`}
                   >
@@ -165,7 +165,7 @@ export default function ChatWidget() {
 
               {isLoading && messages[messages.length - 1]?.role === "user" && (
                 <div className="flex gap-2 justify-start">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-red-500 flex items-center justify-center shrink-0">
                     <Bot size={14} className="text-white" />
                   </div>
                   <div className="bg-white dark:bg-slate-800 p-3 rounded-2xl rounded-tl-sm text-sm text-slate-500">
@@ -203,7 +203,7 @@ export default function ChatWidget() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="p-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+        className="p-4 bg-gradient-to-r from-blue-600 to-red-400 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
         aria-label={isOpen ? "Close chat" : "Open chat"}
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}

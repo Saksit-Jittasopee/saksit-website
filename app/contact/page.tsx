@@ -1,11 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactMapLoader from "@/components/ContactMapLoader";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaPhone, FaXTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 
 export const metadata = {
@@ -71,6 +68,13 @@ export default function Contact() {
         <a href="mailto:saksitjittasopee@gmail.com" target="_blank" className="text-blue-500 text-sm break-all hover:underline">saksitjittasopee@gmail.com</a>
       </div>
     </div>
+
+    <div className="w-full sm:w-80 bg-gray-100 border border-blue-500 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+          <a href="https://x.com/theshockedxd" target="_blank" className="mt-2 hover:scale-110 transition-transform text-gray-800"><FaXTwitter size={75} /></a>
+          <h1 className="mt-5 text-2xl font-bold text-gray-800">X</h1>
+          <h1 className="mt-2 text-sm font-bold text-gray-600">Link To Website:</h1>
+          <a href="https://x.com/theshockedxd" target="_blank" className="mt-1 text-blue-500 break-all hover:underline">View X</a>
+        </div>
 
   </div>
       

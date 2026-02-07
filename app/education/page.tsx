@@ -42,7 +42,7 @@ export default function Education() {
                 </div>
                 
                 <div className="text-gray-600 dark:text-gray-300 space-y-1">
-                    <p>GPA: <span className="font-semibold text-gray-900 dark:text-white">3.42</span></p>
+                    <p>GPA: <span className="font-semibold text-gray-900 dark:text-white">3.56</span></p>
                     <p>Faculty of Information and Communication Technology</p>
                     <p className="text-sm text-gray-500">Mahidol University, Salaya Campus, Thailand</p>
                 </div>

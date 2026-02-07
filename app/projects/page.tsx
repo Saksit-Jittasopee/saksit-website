@@ -4,6 +4,8 @@ import webapp1 from "@/public/assets/Projects/Ayema5kon1.png";
 import currentchamp1 from "@/public/assets/Projects/Current_Wrestling_Champions_1.png";
 import teasmoker from "@/public/assets/Projects/Tea_Smoker_Chart.png";
 import bar from "@/public/assets/Projects/bar.png"
+import monday from "@/public/assets/Projects/monday.png"
+import chanasorntravel from "@/public/assets/Projects/chanasorn_travel_2025_3.png"
 import ProjectCard from '@/components/ProjectCard';
 import { GoProjectRoadmap } from "react-icons/go";
 
@@ -50,7 +52,7 @@ export default function Projects() {
     title="CD Keys Website"
     description="This is a project for 'Web Technologies and Application' Class. We made the CD-Keys Website using React, Vite, and JavaScript to develop the frontend part and Node.Js and Javascript to develop backend and using MySQL as Database for this project. My role in this project was backend part doing the Authentication using JSON Web Token, Steam API Players Count, Search, MySQL Databases, and also the frontend part by using API to connect with backend and databases."
     imageSrc={webapp1}
-    link="https://github.com/WISHERCARTs/Ayema5kon-project"
+    link="https://github.com/Saksit-Jittasopee/Ayema5kon-project"
     imageFile="/saksit-website/Ayema5kon.pdf"
     tags={['React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL']}
       />
@@ -64,6 +66,28 @@ export default function Projects() {
     link="https://github.com/Saksit-Jittasopee/python-charts"
     imageFile="/saksit-website/Python-Chart.pdf"
     tags={['Python', 'Pandas', 'Matplotlib']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="chanasorn-travel-2025"
+    description="My friend Chanasorn / Sugus. He's travelled a lot. So, we make this project to collect his data and making charts to show the results of his data in 2025 by using Python, Pandas, NumPy, Matplotlib, Scikit-Learn for this project."
+    imageSrc={chanasorntravel}
+    link="https://github.com/Saksit-Jittasopee/chanasorn-travel-2025"
+    imageFile="/saksit-website/chanasorn-travel-2025.pdf"
+    tags={['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-Learn', 'Linear-Regression']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="class-discord-bot"
+    description="This project A discord bot that remind class every weekday (Monday-Friday) at 7 AM. This bot is made with Go and Discord. You can invite this bot to your server and use it for free."
+    imageSrc={monday}
+    link="https://github.com/Saksit-Jittasopee/class-discord-bot"
+    imageFile="/saksit-website/class-discord-bot.pdf"
+    tags={['Go', 'Bot', 'Discord Bot']}
       />
   </div>
 
