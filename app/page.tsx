@@ -307,7 +307,7 @@ export default function Home() {
       description="The first in a three-course series to build your networking skills and get ready for CCNA certification and associate-level jobs. Earner has knowledge of networking including IP addressing, how physical, data link protocols support Ethernet, can configure connectivity between switches, routers and end devices to provide access to local and remote resources."
       imageSrc={CCNACertificate}
       link="https://www.credly.com/badges/15a5588a-98df-45aa-986b-7a12a01a8d61"
-      imageFile="/saksit-website/CCNA_Introduction_to_Networks.pdf"
+      imageFile="/saksit-website/CCNA-_Introduction_to_Networks.pdf"
       />
       </div>
         </motion.div>
@@ -325,7 +325,7 @@ export default function Home() {
       description="This course teaches you the fundamental tools of a data analyst. You will learn to transform, organize, and visualize data with spreadsheet tools such as Excel, SQL, and Tableau."
       imageSrc={DataAnalyticsCer}
       link="https://www.credly.com/badges/7f404bd4-6060-4068-bea8-4b0b54b097f5"
-      imageFile="/saksit-website/DataAnalyticsEssentialsUpdate2023.pdf"
+      imageFile="/saksit-website/DataAnalyticsEssentials.pdf"
       />
       </div>
                 </motion.div>
@@ -361,7 +361,7 @@ export default function Home() {
       description="This course teaches you the foundational data science skills needed to begin a career in data science. You will learn how to work with data, perform data analysis, and create data visualizations using Python."
       imageSrc={DataSciencePythonCer}
       link="https://www.credly.com/badges/085c5d2f-107f-467c-b76d-4986637e4a81"
-      imageFile="/saksit-website/DataScienceEssentialsWithPython.pdf"
+      imageFile="/saksit-website/DataScienceEssentialswithPython.pdf"
       />
       </div>
                         </motion.div>
