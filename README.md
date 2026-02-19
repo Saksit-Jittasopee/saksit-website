@@ -9,7 +9,7 @@
 
 **A modern, responsive portfolio website**
 
-[🌐 Live Demo](https://saksit-jittasopee.github.io/saksit-website/) • [📧 Contact Me](mailto:saksitjittasopee@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/saksit-jittasopee-743981382/)
+[🌐 Live Demo](https://saksit-website.vercel.app/) • [📧 Contact Me](mailto:saksitjittasopee@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/saksit-jittasopee-743981382/)
 
 </div>
 
@@ -37,7 +37,7 @@
 | **Map**        | Leaflet-OpenStreetMap       |
 | **AI**         | Google Gemini API, LangChain   |
 | **Icons**      | Lucide React, React Icons, Icon Packs (https://www.iconpacks.net/free-icon/user-3296.html)  |
-| **Deployment** | GitHub.io                   |
+| **Deployment** | Vercel                  |
 
 ---
 
