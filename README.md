@@ -45,7 +45,6 @@
 
 ### Prerequisites
 
-- Node.js 18+
 - npm or yarn
 
 ### Installation
@@ -91,7 +90,8 @@
 my-portfolio/
 📦app
  ┣ 📂api
- ┃ ┗ 📜route.tsx
+ ┃ ┣ 📂chat
+ ┃ ┃ ┣ 📜route.tsx
  ┣ 📂certificate
  ┃ ┗ 📜page.tsx
  ┣ 📂contact

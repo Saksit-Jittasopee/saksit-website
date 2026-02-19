@@ -1,6 +1,5 @@
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { HumanMessage, AIMessage, SystemMessage } from "@langchain/core/messages";
-//import { LangChainAdapter } from '@ai-sdk/react';
 
 export const maxDuration = 30;
 
@@ -73,6 +72,35 @@ export async function POST(req: Request) {
          - บอทแจ้งเตือนคาบเรียนใน Discord
          - Tech: Go, Discord
          - สิ่งที่เรียนรู้: Discord Bot, Go, Crontab
+
+      [Certificate]
+
+      1. CCNA: Introduction to Networks
+          - โดย Cisco Networking Academy
+      2. Data Analytics Essentials
+          - โดย Cisco Networking Academy
+      3. Introduction to Data Science
+          - โดย Cisco Networking Academy
+      4. Data Science Essentials With Python
+          - โดย Cisco Networking Academy
+      5. Data Fundamentals
+          - โดย IBM SkillsBuild
+      6. Introduction to Modern AI
+          - โดย Cisco Networking Academy
+      7. AI Fundamentals
+          - โดย IBM SkillsBuild
+      8. Introduction to IoT
+          - โดย Cisco Networking Academy
+      9. C++ Essentials 1
+          - โดย Cisco Networking Academy
+      10. Cybersecurity Fundamentals
+          - โดย Mahidol University Extension
+      11. Zero Trust Security
+          - โดย Mahidol University ICT X-Learn
+      12. GenAI : เสริมทักษะนักวิจัยยุคดิจิทัล
+          - โดย Mahidol University ICT X-Learn
+      13. Digital Awareness
+          - โดย Mahidol University
 
       [กฎการตอบ]
       - ตอบสั้นกระชับ ตรงประเด็น ไม่อ้อมค้อม

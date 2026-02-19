@@ -99,7 +99,7 @@ export default function Certificate() {
       description="This course introduces you to the core concepts of modern artificial intelligence (AI). You will learn about machine learning, deep learning, natural language processing, and computer vision. The individual has a conceptual understanding of how AI is applied in various industries and use cases."
       imageSrc={AIFundamental4}
       link="https://www.credly.com/badges/e9e43c65-8c14-4ea8-843a-1a8c44ed1002"
-      imageFile="/saksit-website/AI_Fundamentals_with_IBM_SkillsBuild_certificate.pdf"
+      imageFile="/saksit-website/IBMDesign-AI.pdf"
       />
       </div>
                   <div className="flex justify-center"> 
