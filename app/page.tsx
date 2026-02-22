@@ -19,6 +19,7 @@ import CCNACertificate from "@/public/assets/Certificate/CCNA-_Introduction_to_N
 import Cpp from "@/public/assets/Certificate/CPP_Essentials.png"
 import Intro2IoT from "@/public/assets/Certificate/Introduction_to_IoT.png"
 import GenAI from "@/public/assets/Certificate/GenAI.png"
+import datascience101 from "@/public/assets/Certificate/DataScience101.png"
 import webapp1 from "@/public/assets/Projects/Ayema5kon1.png";
 import currentchamp1 from "@/public/assets/Projects/Current_Wrestling_Champions_1.png";
 import teasmoker from "@/public/assets/Projects/Tea_Smoker_Chart.png";
@@ -40,6 +41,7 @@ import CertificateCard from "@/components/CertificateCard";
 import { GrCertificate } from "react-icons/gr";
 import { GoProjectRoadmap } from "react-icons/go";
 import { CiCirclePlus } from "react-icons/ci";
+import gender from "@/public/assets/Projects/gender.png";
 
 export default function Home() {
   return (
@@ -83,7 +85,7 @@ export default function Home() {
     transition={{ duration: 0.8, ease: "easeOut" }}
     viewport={{ once: true, amount: 0.3 }}
   >
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ml-5">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ml-5 mr-5">
           <div className="rounded-2xl p-8 shadow-sm border border-blue-600 transition hover:shadow-md">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
@@ -185,7 +187,7 @@ export default function Home() {
     description="I'm a wrestling fan. I love watching professional wrestling so I made this website to show the current champions in major promotions like (WWE, NXT, AEW, etc.) by using React & Vite and use GitHub to deploy. This is my very first web project so It may look simple and basic but I am very proud with this work."
     imageSrc={currentchamp1}
     link="https://saksit-jittasopee.github.io/current-champions/"
-    imageFile="/saksit-website/Current_Wrestling_Champions.pdf"
+    imageFile="Current_Wrestling_Champions.pdf"
     tags={['React', 'JavaScript', 'HTML / CSS', 'Vite']}
       />
     </div>
@@ -204,7 +206,7 @@ export default function Home() {
     description="This is an in-class lab assignment for 'Applied Statistics for Computing' by using R with the group of 2. We have assigned an assignment to make histogram, scatterplot, qqplot, boxplot and many more using R to read a data from CSV file."
     imageSrc={teasmoker}
     link="https://github.com/Saksit-Jittasopee/R-Programming-Lab-Lesson"
-    imageFile="/saksit-website/R-Project.pdf"
+    imageFile="R-Project.pdf"
     tags={['R', 'Data Science', 'ggplot2', 'tidyverse']}
       />
       </div>
@@ -223,7 +225,7 @@ export default function Home() {
     description="This is a project for 'Web Technologies and Application' Class. We made the CD-Keys Website using React, Vite, and JavaScript to develop the frontend part and Node.Js and Javascript to develop backend and using MySQL as Database for this project. My role in this project was backend part doing the Authentication using JSON Web Token, Steam API Players Count, Search, MySQL Databases, and also the frontend part by using API to connect with backend and databases."
     imageSrc={webapp1}
     link="https://github.com/Saksit-Jittasopee/Ayema5kon-project"
-    imageFile="/saksit-website/Ayema5kon.pdf"
+    imageFile="Ayema5kon.pdf"
     tags={['React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL']}
       />
       </div>
@@ -243,7 +245,7 @@ export default function Home() {
     description="This project using Python libraries (Pandas, Matplotlib) to create each type of charts from movies.csv like Bar Chart, Horizontal Bar Chart, Scatter Plot, Pie Chart, Line Chart, and Histogram."
     imageSrc={bar}
     link="https://github.com/Saksit-Jittasopee/python-charts"
-    imageFile="/saksit-website/Python-Chart.pdf"
+    imageFile="Python-Chart.pdf"
     tags={['Python', 'Pandas', 'Matplotlib']}
       />
   </div>
@@ -262,7 +264,7 @@ export default function Home() {
     description="My friend Chanasorn / Sugus. He's travelled a lot. So, we make this project to collect his data and making charts to show the results of his data in 2025 by using Python, Pandas, NumPy, Matplotlib, Scikit-Learn for this project."
     imageSrc={chanasorntravel}
     link="https://github.com/Saksit-Jittasopee/chanasorn-travel-2025"
-    imageFile="/saksit-website/chanasorn-travel-2025.pdf"
+    imageFile="chanasorn-travel-2025.pdf"
     tags={['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-Learn', 'Linear-Regression']}
       />
   </div>
@@ -281,8 +283,27 @@ export default function Home() {
     description="This project A discord bot that remind class every weekday (Monday-Friday) at 7 AM. This bot is made with Go and Discord. You can invite this bot to your server and use it for free."
     imageSrc={monday}
     link="https://github.com/Saksit-Jittasopee/class-discord-bot"
-    imageFile="/saksit-website/class-discord-bot.pdf"
+    imageFile="class-discord-bot.pdf"
     tags={['Go', 'Bot', 'Discord Bot']}
+      />
+  </div>
+  </motion.div>
+
+  <motion.div
+    className="mt-20 text-center"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true, amount: 0.1 }}
+  >
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="gender-classification-deep-learning"
+    description="This project is about using deep learning to classify the gender of people in photo feed using OpenCV's DNN module. The project utilizes a pre-trained Caffe model for face detection and a trained PyTorch model using mobilenet_v2 model to classify gender. The dataset is from saadpd's Kaggle (Men-Women Classification). The application captures video from the webcam, detects faces, and classifies the gender of the detected faces, displaying the results and confidence in photo using streamlit to deploy the web application."
+    imageSrc={gender}
+    link="https://github.com/Saksit-Jittasopee/gender-classification-deep-learning"
+    imageFile="gender-classification-deep-learning.pdf"
+    tags={['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification', 'Neural Networks', 'Jupyter Notebook']}
       />
   </div>
   </motion.div>
@@ -307,7 +328,7 @@ export default function Home() {
       description="The first in a three-course series to build your networking skills and get ready for CCNA certification and associate-level jobs. Earner has knowledge of networking including IP addressing, how physical, data link protocols support Ethernet, can configure connectivity between switches, routers and end devices to provide access to local and remote resources."
       imageSrc={CCNACertificate}
       link="https://www.credly.com/badges/15a5588a-98df-45aa-986b-7a12a01a8d61"
-      imageFile="/saksit-website/CCNA-_Introduction_to_Networks.pdf"
+      imageFile="CCNA-_Introduction_to_Networks.pdf"
       />
       </div>
         </motion.div>
@@ -325,7 +346,7 @@ export default function Home() {
       description="This course teaches you the fundamental tools of a data analyst. You will learn to transform, organize, and visualize data with spreadsheet tools such as Excel, SQL, and Tableau."
       imageSrc={DataAnalyticsCer}
       link="https://www.credly.com/badges/7f404bd4-6060-4068-bea8-4b0b54b097f5"
-      imageFile="/saksit-website/DataAnalyticsEssentials.pdf"
+      imageFile="DataAnalyticsEssentials.pdf"
       />
       </div>
                 </motion.div>
@@ -343,7 +364,7 @@ export default function Home() {
       description="This course introduces the basics of data science. You will learn what data science is, the different types of data, and broad understanding in basic concepts of Data Analytics, Data Engineering, Data Science and AI/ML related job functions."
       imageSrc={IntroDataScienceCer}
       link="https://www.credly.com/badges/635db776-1c4a-4a16-9832-46edb22453c3"
-      imageFile="/saksit-website/Introduction_to_Data_Science_certificate.pdf"
+      imageFile="Introduction_to_Data_Science_certificate.pdf"
       />
       </div>
                     </motion.div>
@@ -361,7 +382,7 @@ export default function Home() {
       description="This course teaches you the foundational data science skills needed to begin a career in data science. You will learn how to work with data, perform data analysis, and create data visualizations using Python."
       imageSrc={DataSciencePythonCer}
       link="https://www.credly.com/badges/085c5d2f-107f-467c-b76d-4986637e4a81"
-      imageFile="/saksit-website/DataScienceEssentialswithPython.pdf"
+      imageFile="DataScienceEssentialswithPython.pdf"
       />
       </div>
                         </motion.div>
@@ -379,7 +400,7 @@ export default function Home() {
       description="This course introduces you to the foundational concepts of data. You will learn about data types, data structures, and data management techniques. The individual has a conceptual understanding of how to clean, refine, and visualize data using IBM Watson Studio."
       imageSrc={DataFundamentalCer}
       link="https://www.credly.com/badges/a13c435a-1106-4015-9bff-18d7702b5d89"
-      imageFile="/saksit-website/IBMDesign20251129-31-s9ks8h.pdf"
+      imageFile="IBMDesign20251129-31-s9ks8h.pdf"
       />
       </div>
                       </motion.div>
@@ -397,10 +418,28 @@ export default function Home() {
       description="This course introduces you to the core concepts of modern artificial intelligence (AI). You will learn about machine learning, deep learning, natural language processing, and computer vision. The individual has a conceptual understanding of how AI is applied in various industries and use cases."
       imageSrc={ModernAICer}
       link="https://www.credly.com/badges/c0d60c22-c3e0-4ac4-bfa2-dc37e7ab4d36"
-      imageFile="/saksit-website/Introduction_to_Modern_AI_certificate.pdf"
+      imageFile="Introduction_to_Modern_AI_certificate.pdf"
       />
       </div>
                 </motion.div>
+
+                <motion.div
+                      className="mt-20 text-center"
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      >  
+                          <div className="flex justify-center"> 
+      <CertificateCard 
+      title="Data Science 101"
+      description="This course introduces you to the basics of data science. You will learn what data science is, the different types of data, and broad understanding in basic concepts of Data Analytics, Data Engineering, Data Science and AI/ML related job functions."
+      imageSrc={datascience101}
+      link="https://www.credly.com/badges/9e618b24-5cdb-4999-9ca1-12ef88d1dcaf"
+      imageFile="DataScience101.pdf"
+      />
+      </div>
+                      </motion.div>
                 
               <motion.div
                   className="mt-20 text-center"
@@ -415,7 +454,7 @@ export default function Home() {
       description="This course introduces you to the core concepts of modern artificial intelligence (AI). You will learn about machine learning, deep learning, natural language processing, and computer vision. The individual has a conceptual understanding of how AI is applied in various industries and use cases."
       imageSrc={AIFundamental4}
       link="https://www.credly.com/badges/e9e43c65-8c14-4ea8-843a-1a8c44ed1002"
-      imageFile="/saksit-website/AI_Fundamentals_with_IBM_SkillsBuild_certificate.pdf"
+      imageFile="AI_Fundamentals_with_IBM_SkillsBuild_certificate.pdf"
       />
       </div>
                     </motion.div>
@@ -433,7 +472,7 @@ export default function Home() {
                     description="The holder of this student-level credential has introductory knowledge of IoT and has an understanding how it enables the Digital Transformation along with emerging technologies such as data analytics, AI/ML and the increased attention on cybersecurity. They understand the importance of Intent Based Networking to be able to connect and secure tens of billions of new devices with ease."
                     imageSrc={Intro2IoT}
                     link="https://www.credly.com/badges/26a17b1c-4272-4842-bd8f-163d66e643e1"
-                    imageFile="/saksit-website/Introduction_to_IoT_certificate.pdf"
+                    imageFile="Introduction_to_IoT_certificate.pdf"
                   />
                   </div>
               </motion.div>
@@ -451,7 +490,7 @@ export default function Home() {
                     description="Earners will know the syntax and semantics of the C++ language, including: data types, flow control, arrays and pointers, memory management and structure concepts, the fundamental programming techniques characteristic of the C++ language, and the use of the most basic standard library functions."
                     imageSrc={Cpp}
                     link="https://www.credly.com/badges/013a96b1-e24c-4a34-a119-a3e787281e93"
-                    imageFile="/saksit-website/C--_Essentials_1_certificate.pdf"
+                    imageFile="C--_Essentials_1_certificate.pdf"
                   />
                   </div>
               </motion.div>
@@ -469,7 +508,7 @@ export default function Home() {
                     description="This course introduces you to the core concepts of cybersecurity. You will learn about network security, threat detection, and risk management. The individual has a conceptual understanding of how cybersecurity is applied in various industries, use cases and it audits."
                     imageSrc={Cybersecurity}
                     link=""
-                    imageFile="/saksit-website/cybersecurity.pdf"
+                    imageFile="cybersecurity.pdf"
                   />
                   </div>
               </motion.div>
@@ -487,7 +526,7 @@ export default function Home() {
                     description="This course introduces you to the core concepts of Zero Trust Security. You will learn about Zero Trust architecture, principles, and implementation strategies. The individual has a conceptual understanding of how Zero Trust Security is applied in various industries and use cases."
                     imageSrc={ZeroTrust}
                     link=""
-                    imageFile="/saksit-website/Zero_Trust_Security.pdf"
+                    imageFile="Zero_Trust_Security.pdf"
                   />
                   </div>
               </motion.div>
@@ -505,7 +544,7 @@ export default function Home() {
                     description="This course introduces you to the core concepts of Digital Awareness. You will learn about digital literacy, cybersecurity, and responsible digital citizenship. The individual has a conceptual understanding of how digital awareness is applied in various industries and use cases."
                     imageSrc={DigitalAwareness}
                     link=""
-                    imageFile="/saksit-website/digital_awareness.pdf"
+                    imageFile="digital_awareness.pdf"
                   />
                   </div>
               </motion.div>

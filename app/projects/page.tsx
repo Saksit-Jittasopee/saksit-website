@@ -8,6 +8,7 @@ import monday from "@/public/assets/Projects/monday.png"
 import chanasorntravel from "@/public/assets/Projects/chanasorn_travel_2025_3.png"
 import ProjectCard from '@/components/ProjectCard';
 import { GoProjectRoadmap } from "react-icons/go";
+import gender from "@/public/assets/Projects/gender.png";
 
 export const metadata = {
   title: 'Projects - Saksit Jittasopee',
@@ -31,7 +32,7 @@ export default function Projects() {
     description="I'm a wrestling fan. I love watching professional wrestling so I made this website to show the current champions in major promotions like (WWE, NXT, AEW, etc.) by using React & Vite and use GitHub to deploy. This is my very first web project so It may look simple and basic but I am very proud with this work."
     imageSrc={currentchamp1}
     link="https://saksit-jittasopee.github.io/current-champions/"
-    imageFile="/saksit-website/Current_Wrestling_Champions.pdf"
+    imageFile="Current_Wrestling_Champions.pdf"
     tags={['React', 'JavaScript', 'HTML / CSS', 'Vite']}
       />
     </div>
@@ -42,7 +43,7 @@ export default function Projects() {
     description="This is an in-class lab assignment for 'Applied Statistics for Computing' by using R with the group of 2. We have assigned an assignment to make histogram, scatterplot, qqplot, boxplot and many more using R to read a data from CSV file."
     imageSrc={teasmoker}
     link="https://github.com/Saksit-Jittasopee/R-Programming-Lab-Lesson"
-    imageFile="/saksit-website/R-Project.pdf"
+    imageFile="R-Project.pdf"
     tags={['R', 'Data Science', 'ggplot2', 'tidyverse']}
       />
       </div>
@@ -53,7 +54,7 @@ export default function Projects() {
     description="This is a project for 'Web Technologies and Application' Class. We made the CD-Keys Website using React, Vite, and JavaScript to develop the frontend part and Node.Js and Javascript to develop backend and using MySQL as Database for this project. My role in this project was backend part doing the Authentication using JSON Web Token, Steam API Players Count, Search, MySQL Databases, and also the frontend part by using API to connect with backend and databases."
     imageSrc={webapp1}
     link="https://github.com/Saksit-Jittasopee/Ayema5kon-project"
-    imageFile="/saksit-website/Ayema5kon.pdf"
+    imageFile="Ayema5kon.pdf"
     tags={['React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL']}
       />
       </div>
@@ -64,7 +65,7 @@ export default function Projects() {
     description="This project using Python libraries (Pandas, Matplotlib) to create each type of charts from movies.csv like Bar Chart, Horizontal Bar Chart, Scatter Plot, Pie Chart, Line Chart, and Histogram."
     imageSrc={bar}
     link="https://github.com/Saksit-Jittasopee/python-charts"
-    imageFile="/saksit-website/Python-Chart.pdf"
+    imageFile="Python-Chart.pdf"
     tags={['Python', 'Pandas', 'Matplotlib']}
       />
   </div>
@@ -75,7 +76,7 @@ export default function Projects() {
     description="My friend Chanasorn / Sugus. He's travelled a lot. So, we make this project to collect his data and making charts to show the results of his data in 2025 by using Python, Pandas, NumPy, Matplotlib, Scikit-Learn for this project."
     imageSrc={chanasorntravel}
     link="https://github.com/Saksit-Jittasopee/chanasorn-travel-2025"
-    imageFile="/saksit-website/chanasorn-travel-2025.pdf"
+    imageFile="chanasorn-travel-2025.pdf"
     tags={['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-Learn', 'Linear-Regression']}
       />
   </div>
@@ -86,8 +87,19 @@ export default function Projects() {
     description="This project A discord bot that remind class every weekday (Monday-Friday) at 7 AM. This bot is made with Go and Discord. You can invite this bot to your server and use it for free."
     imageSrc={monday}
     link="https://github.com/Saksit-Jittasopee/class-discord-bot"
-    imageFile="/saksit-website/class-discord-bot.pdf"
+    imageFile="class-discord-bot.pdf"
     tags={['Go', 'Bot', 'Discord Bot']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="gender-classification-deep-learning"
+    description="This project is about using deep learning to classify the gender of people in photo feed using OpenCV's DNN module. The project utilizes a pre-trained Caffe model for face detection and a trained PyTorch model using mobilenet_v2 model to classify gender. The dataset is from saadpd's Kaggle (Men-Women Classification). The application captures video from the webcam, detects faces, and classifies the gender of the detected faces, displaying the results and confidence in photo using streamlit to deploy the web application."
+    imageSrc={gender}
+    link="https://github.com/Saksit-Jittasopee/gender-classification-deep-learning"
+    imageFile="gender-classification-deep-learning.pdf"
+    tags={['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification', 'Neural Networks', 'Jupyter Notebook']}
       />
   </div>
 
