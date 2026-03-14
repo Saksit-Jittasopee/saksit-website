@@ -17,6 +17,7 @@ import Cpp from "@/public/assets/Certificate/CPP_Essentials.png"
 import GenAI from "@/public/assets/Certificate/GenAI.png"
 import CertificateCard from '@/components/CertificateCard';
 import datascience101 from "@/public/assets/Certificate/DataScience101.png"
+import databricksai from "@/public/assets/Certificate/DataBricks_GenAI_Certificate.png"
 
 export const metadata = {
   title: 'Certificate - Saksit Jittasopee',
@@ -40,7 +41,7 @@ export default function Certificate() {
       description="The first in a three-course series to build your networking skills and get ready for CCNA certification and associate-level jobs. Earner has knowledge of networking including IP addressing, how physical, data link protocols support Ethernet, can configure connectivity between switches, routers and end devices to provide access to local and remote resources."
       imageSrc={CCNACertificate}
       link="https://www.credly.com/badges/15a5588a-98df-45aa-986b-7a12a01a8d61"
-      imageFile="CCNA_Introduction_to_Networks.pdf"
+      imageFile="CCNA-_Introduction_to_Networks.pdf"
       />
       </div>
 
@@ -50,7 +51,7 @@ export default function Certificate() {
       description="This course teaches you the fundamental tools of a data analyst. You will learn to transform, organize, and visualize data with spreadsheet tools such as Excel, SQL, and Tableau."
       imageSrc={DataAnalyticsCer}
       link="https://www.credly.com/badges/7f404bd4-6060-4068-bea8-4b0b54b097f5"
-      imageFile="DataAnalyticsEssentialsUpdate2023.pdf"
+      imageFile="DataAnalyticsEssentials.pdf"
       />
       </div>
 
@@ -63,14 +64,14 @@ export default function Certificate() {
       imageFile="Introduction_to_Data_Science_certificate.pdf"
       />
       </div>
-
+ 
                           <div className="flex justify-center"> 
       <CertificateCard 
       title="Data Science Essentials With Python"
       description="This course teaches you the foundational data science skills needed to begin a career in data science. You will learn how to work with data, perform data analysis, and create data visualizations using Python."
       imageSrc={DataSciencePythonCer}
       link="https://www.credly.com/badges/085c5d2f-107f-467c-b76d-4986637e4a81"
-      imageFile="DataScienceEssentialsWithPython.pdf"
+      imageFile="DataScienceEssentialswithPython.pdf"
       />
       </div>
 
@@ -80,7 +81,7 @@ export default function Certificate() {
       description="This course introduces you to the foundational concepts of data. You will learn about data types, data structures, and data management techniques. The individual has a conceptual understanding of how to clean, refine, and visualize data using IBM Watson Studio."
       imageSrc={DataFundamentalCer}
       link="https://www.credly.com/badges/a13c435a-1106-4015-9bff-18d7702b5d89"
-      imageFile="IBMDesign20251129-31-s9ks8h.pdf"
+      imageFile="IBMDesign-Data.pdf"
       />
       </div>
 
@@ -94,7 +95,7 @@ export default function Certificate() {
       />
       </div>
 
-      <div className="flex justify-center"> 
+                          <div className="flex justify-center"> 
       <CertificateCard 
       title="Data Science 101"
       description="This course introduces you to the basics of data science. You will learn what data science is, the different types of data, and broad understanding in basic concepts of Data Analytics, Data Engineering, Data Science and AI/ML related job functions."
@@ -103,7 +104,7 @@ export default function Certificate() {
       imageFile="DataScience101.pdf"
       />
       </div>
-
+                
                 <div className="flex justify-center"> 
       <CertificateCard 
       title="AI Fundamentals"
@@ -113,6 +114,7 @@ export default function Certificate() {
       imageFile="IBMDesign-AI.pdf"
       />
       </div>
+
                   <div className="flex justify-center"> 
                     <CertificateCard 
                     title="Introduction to IoT"
@@ -132,7 +134,7 @@ export default function Certificate() {
                     imageFile="C--_Essentials_1_certificate.pdf"
                   />
                   </div>
-
+                    
                   <div className="flex justify-center"> 
                     <CertificateCard 
                     title="Cybersecurity Fundamentals"
@@ -171,7 +173,18 @@ export default function Certificate() {
                     link=""
                     imageFile="GenAI.pdf"
                   />
-                  </div>                   
+                  </div>
+
+                  <div className="flex justify-center"> 
+                    <CertificateCard 
+                    title="Generative AI Fundamentals"
+                    description="This course introduces you to the core concepts of Generative AI. You will learn about the fundamentals of generative AI, including LLMs, AI, and prompt engineering. The individual has a conceptual understanding of how generative AI is applied in various industries and use cases."
+                    imageSrc={databricksai}
+                    link="https://credentials.databricks.com/f36d665b-a3ca-472a-ba77-d4d358ef0e1d#acc.5y3vJLUu"
+                    imageFile="DataBricks_GenAI_Certificate.pdf"
+                  />
+                  </div>
+                              
     <Footer></Footer>
     </div>
   );

@@ -20,6 +20,7 @@ import Cpp from "@/public/assets/Certificate/CPP_Essentials.png"
 import Intro2IoT from "@/public/assets/Certificate/Introduction_to_IoT.png"
 import GenAI from "@/public/assets/Certificate/GenAI.png"
 import datascience101 from "@/public/assets/Certificate/DataScience101.png"
+import databricksai from "@/public/assets/Certificate/DataBricks_GenAI_Certificate.png"
 import webapp1 from "@/public/assets/Projects/Ayema5kon1.png";
 import currentchamp1 from "@/public/assets/Projects/Current_Wrestling_Champions_1.png";
 import teasmoker from "@/public/assets/Projects/Tea_Smoker_Chart.png";
@@ -400,7 +401,7 @@ export default function Home() {
       description="This course introduces you to the foundational concepts of data. You will learn about data types, data structures, and data management techniques. The individual has a conceptual understanding of how to clean, refine, and visualize data using IBM Watson Studio."
       imageSrc={DataFundamentalCer}
       link="https://www.credly.com/badges/a13c435a-1106-4015-9bff-18d7702b5d89"
-      imageFile="IBMDesign20251129-31-s9ks8h.pdf"
+      imageFile="IBMDesign-Data.pdf"
       />
       </div>
                       </motion.div>
@@ -454,7 +455,7 @@ export default function Home() {
       description="This course introduces you to the core concepts of modern artificial intelligence (AI). You will learn about machine learning, deep learning, natural language processing, and computer vision. The individual has a conceptual understanding of how AI is applied in various industries and use cases."
       imageSrc={AIFundamental4}
       link="https://www.credly.com/badges/e9e43c65-8c14-4ea8-843a-1a8c44ed1002"
-      imageFile="AI_Fundamentals_with_IBM_SkillsBuild_certificate.pdf"
+      imageFile="IBMDesign-AI.pdf"
       />
       </div>
                     </motion.div>
@@ -562,7 +563,25 @@ export default function Home() {
                     description="This course introduces you to the core concepts of Generative AI. You will learn about the fundamentals of generative AI, including machine learning, neural networks, and prompt engineering. The individual has a conceptual understanding of how generative AI is applied in various industries and use cases."
                     imageSrc={GenAI}
                     link=""
-                    imageFile="/saksit-website/GenAI.pdf"
+                    imageFile="GenAI.pdf"
+                  />
+                  </div>
+              </motion.div>
+
+              <motion.div
+                  className="mt-20 text-center"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true, amount: 0.3 }}
+              >
+                  <div className="flex justify-center"> 
+                    <CertificateCard 
+                    title="Generative AI Fundamentals"
+                    description="This course introduces you to the core concepts of Generative AI. You will learn about the fundamentals of generative AI, including LLMs, AI, and prompt engineering. The individual has a conceptual understanding of how generative AI is applied in various industries and use cases."
+                    imageSrc={databricksai}
+                    link="https://credentials.databricks.com/f36d665b-a3ca-472a-ba77-d4d358ef0e1d#acc.5y3vJLUu"
+                    imageFile="DataBricks_GenAI_Certificate.pdf"
                   />
                   </div>
               </motion.div>
