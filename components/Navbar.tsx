@@ -30,6 +30,9 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex md:flex-row md:items-center md:space-x-8">
+            <Link href="/activity">
+              <h1 className={isActive('/activity') ? activeLinkStyle : linkStyle}>Activity</h1>
+            </Link>
             <Link href="/certificate">
               <h1 className={isActive('/certificate') ? activeLinkStyle : linkStyle}>Certificate</h1>
             </Link>
@@ -59,6 +62,9 @@ export default function Navbar() {
 
         {isOpen && (
           <div className="md:hidden mt-4 flex flex-col space-y-4 pb-4 animate-in slide-in-from-top-5 border-t border-gray-100 dark:border-gray-800 pt-4">
+            <Link href="/activity" onClick={() => setIsOpen(false)}>
+              <h1 className={isActive('/activity') ? activeLinkStyle : linkStyle}>Activity</h1>
+            </Link>
             <Link href="/certificate" onClick={() => setIsOpen(false)}>
               <h1 className={isActive('/certificate') ? activeLinkStyle : linkStyle}>Certificate</h1>
             </Link>

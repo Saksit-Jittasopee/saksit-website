@@ -21,6 +21,8 @@ import Intro2IoT from "@/public/assets/Certificate/Introduction_to_IoT.png"
 import GenAI from "@/public/assets/Certificate/GenAI.png"
 import datascience101 from "@/public/assets/Certificate/DataScience101.png"
 import databricksai from "@/public/assets/Certificate/DataBricks_GenAI_Certificate.png"
+import databricksdataen from "@/public/assets/Certificate/Databricks_Data_Engineering_with_Databricks-1.png"
+import databricksdevops from "@/public/assets/Certificate/Databricks_DevOps_Data_Engineering-1.png"
 import webapp1 from "@/public/assets/Projects/Ayema5kon1.png";
 import currentchamp1 from "@/public/assets/Projects/Current_Wrestling_Champions_1.png";
 import teasmoker from "@/public/assets/Projects/Tea_Smoker_Chart.png";
@@ -585,6 +587,42 @@ export default function Home() {
                   />
                   </div>
               </motion.div>
+
+            <motion.div
+                  className="mt-20 text-center"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true, amount: 0.3 }}
+              >
+              <div className="flex justify-center"> 
+                    <CertificateCard 
+                    title="Get Started with Databricks for Data Engineering"
+                    description="This course will have you follow a basic data engineering workflow to perform tasks such as creating and working with tables, ingesting data into Delta Lake, transforming data through the medallion architecture, and using Databricks Workflows to orchestrate data engineering tasks. You’ll also learn how Databricks supports data warehousing needs through the use of Databricks SQL, Lakeflow Spark Declarative Pipelines, and Unity Catalog."
+                    imageSrc={databricksdataen}
+                    link="https://credentials.databricks.com/afc04fce-aec3-4175-8628-cf9f15646ab0#acc.5hPuryTG"
+                    imageFile="Databricks_Data_Engineering_with_Databricks.pdf"
+                  />
+                  </div>
+                  </motion.div>
+
+                <motion.div
+                  className="mt-20 text-center"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true, amount: 0.3 }}
+              >
+                  <div className="flex justify-center"> 
+                    <CertificateCard 
+                    title="DevOps Essentials for Data Engineering"
+                    description="This course apply modularity principles in PySpark to create reusable components and structure code efficiently. Hands-on experience includes designing and implementing unit tests for PySpark functions using the pytest framework, followed by integration testing for Databricks data pipelines with Spark Declarative Pipeline and Jobs to ensure reliability and covers essential Git operations within Databricks, including using Databricks Git Folders to integrate continuous integration practices."
+                    imageSrc={databricksdevops}
+                    link="https://credentials.databricks.com/3dcf15c1-a6ab-4ecd-b9d6-5d4f476c1de2#acc.6fhODaqB"
+                    imageFile="Databricks_DevOps_Data_Engineering.pdf"
+                  />
+                  </div>
+                  </motion.div>
                 
   <motion.div
   className="mt-20 ml-5"
@@ -624,7 +662,7 @@ export default function Home() {
                 </div>
                 
                 <div className="text-gray-600 dark:text-gray-300 space-y-1">
-                    <p>GPA: <span className="font-semibold text-gray-900 dark:text-white">3.56</span></p>
+                    <p>GPA: <span className="font-semibold text-gray-900 dark:text-white">3.63</span></p>
                     <p>Faculty of Information and Communication Technology</p>
                     <p className="text-sm text-gray-500">Mahidol University, Salaya Campus, Thailand</p>
                 </div>

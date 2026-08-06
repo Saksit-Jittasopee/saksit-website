@@ -18,6 +18,8 @@ import GenAI from "@/public/assets/Certificate/GenAI.png"
 import CertificateCard from '@/components/CertificateCard';
 import datascience101 from "@/public/assets/Certificate/DataScience101.png"
 import databricksai from "@/public/assets/Certificate/DataBricks_GenAI_Certificate.png"
+import databricksdataen from "@/public/assets/Certificate/Databricks_Data_Engineering_with_Databricks-1.png"
+import databricksdevops from "@/public/assets/Certificate/Databricks_DevOps_Data_Engineering-1.png"
 
 export const metadata = {
   title: 'Certificate - Saksit Jittasopee',
@@ -182,6 +184,26 @@ export default function Certificate() {
                     imageSrc={databricksai}
                     link="https://credentials.databricks.com/f36d665b-a3ca-472a-ba77-d4d358ef0e1d#acc.5y3vJLUu"
                     imageFile="DataBricks_GenAI_Certificate.pdf"
+                  />
+                  </div>
+
+                  <div className="flex justify-center"> 
+                    <CertificateCard 
+                    title="Get Started with Databricks for Data Engineering"
+                    description="This course will have you follow a basic data engineering workflow to perform tasks such as creating and working with tables, ingesting data into Delta Lake, transforming data through the medallion architecture, and using Databricks Workflows to orchestrate data engineering tasks. You’ll also learn how Databricks supports data warehousing needs through the use of Databricks SQL, Lakeflow Spark Declarative Pipelines, and Unity Catalog."
+                    imageSrc={databricksdataen}
+                    link="https://credentials.databricks.com/afc04fce-aec3-4175-8628-cf9f15646ab0#acc.5hPuryTG"
+                    imageFile="Databricks_Data_Engineering_with_Databricks.pdf"
+                  />
+                  </div>
+
+                  <div className="flex justify-center"> 
+                    <CertificateCard 
+                    title="DevOps Essentials for Data Engineering"
+                    description="This course apply modularity principles in PySpark to create reusable components and structure code efficiently. Hands-on experience includes designing and implementing unit tests for PySpark functions using the pytest framework, followed by integration testing for Databricks data pipelines with Spark Declarative Pipeline and Jobs to ensure reliability and covers essential Git operations within Databricks, including using Databricks Git Folders to integrate continuous integration practices."
+                    imageSrc={databricksdevops}
+                    link="https://credentials.databricks.com/3dcf15c1-a6ab-4ecd-b9d6-5d4f476c1de2#acc.6fhODaqB"
+                    imageFile="Databricks_DevOps_Data_Engineering.pdf"
                   />
                   </div>
                               
