@@ -45,6 +45,12 @@ import { GrCertificate } from "react-icons/gr";
 import { GoProjectRoadmap } from "react-icons/go";
 import { CiCirclePlus } from "react-icons/ci";
 import gender from "@/public/assets/Projects/gender.png";
+import age from "@/public/assets/Projects/age_predict.png";
+import healthcare from "@/public/assets/Projects/healthcare_fraud.png";
+import nlp_email from "@/public/assets/Projects/nlp_email_predict.png";
+import shirt_size from "@/public/assets/Projects/shirt_size_recommendation.png";
+import ikillair from "@/public/assets/Projects/ikillair.png";
+import iot_project from "@/public/assets/Projects/iot_project.png";
 
 export default function Home() {
   return (
@@ -55,9 +61,9 @@ export default function Home() {
   <div className="mt-5 ml-0 text-center md:ml-10 pt-2 md:text-left">
     <h1 className="text-5xl font-bold">Hi, I'm <span className="text-blue-600">Saksit Jittasopee</span></h1>
     <br></br>
-    <h2 className="mt-4 text-5xl font-bold">I'm a 2nd Year Student at Mahidol University.</h2>
+    <h2 className="mt-4 text-5xl font-bold">I'm a 3rd Year Student at Mahidol University.</h2>
     <br></br>
-    <p className="mt-4 text-lg">I'm studying B.Sc in Digital Science & Technology (DST) at Faculty of Information and Communication Technology. In the future I would like to study in Data Science's majors and work in Data Science role.</p>
+    <p className="mt-4 text-lg">I'm studying B.Sc in Digital Science & Technology (DST) at Faculty of Information and Communication Technology. I was work as an intern at Beryl8 as Data Analyst (June 2026 - July 2026), I wish to work in data science role in the future.</p>
   </div>
   <Image src={image} alt="Me" width={250} height={150} className="mt-5 ml-0 rounded-xl hover:scale-105 md:ml-10"></Image>
 </div>
@@ -76,7 +82,7 @@ export default function Home() {
     <div>
       <h1 className="m-5 text-4xl font-bold">About Me</h1>
       <h1 className="m-5 text-xl flex justify-center text-center ml-0 md:justify-start md:ml-20 md:text-left">
-        I'm a 2nd Year Student at Mahidol University. Currently, I'm studying B.Sc in Digital Science & Technology (DST) at Faculty of Information and Communication Technology. I can write various programming languages such as Python, Java, HTML, CSS (Bootstrap & Tailwind), JavaScript, TypeScript, C, C++, C#, R, SQL and Go. In Python I can also write NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, Tensorflow and OpenCV. I'm interested in Data Science and wish to study more in the future. I can use various software such as Microsoft Word, Powerpoint, Excel, Power BI, Google Looker Studio, Tableau Public, Visual Studio Code, IBM SPSS Statistics, Postman, Oracle VirtualBox and more.
+        I'm a 3rd Year Student at Mahidol University. Currently, I'm studying B.Sc in Digital Science & Technology (DST) at Faculty of Information and Communication Technology. I can write various programming languages such as Python, Java, HTML, CSS (Bootstrap & Tailwind), JavaScript, TypeScript, C, C++, C#, R, SQL and Go. In Python I can also write NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, Tensorflow and OpenCV. I'm interested in Data Science and wish to study more in the future. I can use various software such as Microsoft Word, Powerpoint, Excel, Power BI, Google Looker Studio, Tableau Public & Desktop, Visual Studio Code, IBM SPSS Statistics, Postman, Oracle VirtualBox and more.
       </h1>
     </div>
   </motion.div>
@@ -307,6 +313,120 @@ export default function Home() {
     link="https://github.com/Saksit-Jittasopee/gender-classification-deep-learning"
     imageFile="gender-classification-deep-learning.pdf"
     tags={['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification', 'Neural Networks', 'Jupyter Notebook']}
+      />
+  </div>
+  </motion.div>
+
+  <motion.div
+    className="mt-20 text-center"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true, amount: 0.1 }}
+  >
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="age-prediction-deep-learning"
+    description="This project is about using deep learning to predict the age of people in pictures using a CNN (Convolutional Neural Network) and PyTorch. The output layer is a linear regression model. The dataset is from jangedoo's Kaggle (UTKFace). The application captures video from the webcam, detects faces, and predicts the age of the detected faces using CascadeClassifier (haarcascade_frontalface_default) from OpenCV, displaying the results using Streamlit to deploy the web application."
+    imageSrc={age}
+    link="https://github.com/Saksit-Jittasopee/age-prediction-deep-learning"
+    imageFile="age_prediction.pdf"
+    tags={['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'CNN', 'Neural Networks', 'Jupyter Notebook', 'Linear Regression']}
+      />
+  </div>
+  </motion.div>
+
+    <motion.div
+    className="mt-20 text-center"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true, amount: 0.1 }}
+  >
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="Weather App Mobile Application"
+    description="This project is about developing a mobile application that provides real-time air quality information and weather updates for users in their respective countries. using Flutter and Dart in frontend part and Javascript and Node.js in backend part. Also, PostgreSQL and Prisma are used for database management. Oracle Cloud is used for deployment."
+    imageSrc={ikillair}
+    link="https://github.com/Saksit-Jittasopee/ITDS283-IKillAir-6787015-6787077"
+    imageFile="ITDS283_Sec2_Group08_Presentation.pdf"
+    tags={['Flutter', 'Dart', 'JavaScript', 'Node.Js', 'PostgreSQL', 'Prisma', 'Oracle Cloud']}
+      />
+  </div>
+  </motion.div>
+
+    <motion.div
+    className="mt-20 text-center"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true, amount: 0.1 }}
+  >
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="Full-Stacks-IoT-Project"
+    description="This project is about developing a IoT Smart Devices using various software and tools."
+    imageSrc={iot_project}
+    link=""
+    imageFile="iot_project.pdf"
+    tags={['Arduino', 'NodeRED', 'Netpie', 'Thingsboard', 'Fritzing', 'ESP32', 'Python']}
+      />
+  </div>
+  </motion.div>
+
+    <motion.div
+    className="mt-20 text-center"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true, amount: 0.1 }}
+  >
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="healthcare-insurance-fraud-detection"
+    description="This project is about using deep learning to classify the healthcare insurance fraud detection dataset. The goal is to build a model that can accurately predict whether a healthcare insurance claim is fraudulent or not based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in fraud detection."
+    imageSrc={healthcare}
+    link="https://github.com/Saksit-Jittasopee/healthcare-insurance-fraud-detection"
+    imageFile="healthcare_fraud_detection.pdf"
+    tags={['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Machine Learning', 'Deep Learning', 'Scikit-Learn', 'Matplotlib']}
+      />
+  </div>
+  </motion.div>
+
+    <motion.div
+    className="mt-20 text-center"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true, amount: 0.1 }}
+  >
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="nlp-spam-email-detection"
+    description="This project is about using AutoModelForSequenceClassification Model to classify the email spam dataset. The goal is to build a model that can accurately predict whether an email is spam or not based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in spam detection."
+    imageSrc={nlp_email}
+    link="https://github.com/Saksit-Jittasopee/nlp-spam-email-detection"
+    imageFile="nlp_email.pdf"
+    tags={['Python', 'Scikit-Learn', 'Dataset', 'Transformers', 'Pandas', 'NLP']}
+      />
+  </div>
+  </motion.div>
+
+    <motion.div
+    className="mt-20 text-center"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true, amount: 0.1 }}
+  >
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="shirt-size-recommendation"
+    description="This project is about using deep learning to recommend shirt sizes. The goal is to build a model that can accurately predict the appropriate shirt size for a user based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in shirt size recommendation."
+    imageSrc={shirt_size}
+    link="https://github.com/Saksit-Jittasopee/shirt-size-recommendation"
+    imageFile="shirt_size_recommendation.pdf"
+    tags={['Python', 'Tensorflow', 'Keras', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification']}
       />
   </div>
   </motion.div>

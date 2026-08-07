@@ -9,6 +9,12 @@ import chanasorntravel from "@/public/assets/Projects/chanasorn_travel_2025_3.pn
 import ProjectCard from '@/components/ProjectCard';
 import { GoProjectRoadmap } from "react-icons/go";
 import gender from "@/public/assets/Projects/gender.png";
+import age from "@/public/assets/Projects/age_predict.png";
+import healthcare from "@/public/assets/Projects/healthcare_fraud.png";
+import nlp_email from "@/public/assets/Projects/nlp_email_predict.png";
+import shirt_size from "@/public/assets/Projects/shirt_size_recommendation.png";
+import ikillair from "@/public/assets/Projects/ikillair.png";
+import iot_project from "@/public/assets/Projects/iot_project.png";
 
 export const metadata = {
   title: 'Projects - Saksit Jittasopee',
@@ -100,6 +106,72 @@ export default function Projects() {
     link="https://github.com/Saksit-Jittasopee/gender-classification-deep-learning"
     imageFile="gender-classification-deep-learning.pdf"
     tags={['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification', 'Neural Networks', 'Jupyter Notebook']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="age-prediction-deep-learning"
+    description="This project is about using deep learning to predict the age of people in pictures using a CNN (Convolutional Neural Network) and PyTorch. The output layer is a linear regression model. The dataset is from jangedoo's Kaggle (UTKFace). The application captures video from the webcam, detects faces, and predicts the age of the detected faces using CascadeClassifier (haarcascade_frontalface_default) from OpenCV, displaying the results using Streamlit to deploy the web application."
+    imageSrc={age}
+    link="https://github.com/Saksit-Jittasopee/age-prediction-deep-learning"
+    imageFile="age_prediction.pdf"
+    tags={['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'CNN', 'Neural Networks', 'Jupyter Notebook', 'Linear Regression']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="Weather App Mobile Application"
+    description="This project is about developing a mobile application that provides real-time air quality information and weather updates for users in their respective countries. using Flutter and Dart in frontend part and Javascript and Node.js in backend part. Also, PostgreSQL and Prisma are used for database management. Oracle Cloud is used for deployment."
+    imageSrc={ikillair}
+    link="https://github.com/Saksit-Jittasopee/ITDS283-IKillAir-6787015-6787077"
+    imageFile="ITDS283_Sec2_Group08_Presentation.pdf"
+    tags={['Flutter', 'Dart', 'JavaScript', 'Node.Js', 'PostgreSQL', 'Prisma', 'Oracle Cloud']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="Full-Stacks-IoT-Project"
+    description="This project is about developing a IoT Smart Devices using various software and tools."
+    imageSrc={iot_project}
+    link=""
+    imageFile="iot_project.pdf"
+    tags={['Arduino', 'NodeRED', 'Netpie', 'Thingsboard', 'Fritzing', 'ESP32', 'Python']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="healthcare-insurance-fraud-detection"
+    description="This project is about using deep learning to classify the healthcare insurance fraud detection dataset. The goal is to build a model that can accurately predict whether a healthcare insurance claim is fraudulent or not based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in fraud detection."
+    imageSrc={healthcare}
+    link="https://github.com/Saksit-Jittasopee/healthcare-insurance-fraud-detection"
+    imageFile="healthcare_fraud_detection.pdf"
+    tags={['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Machine Learning', 'Deep Learning', 'Scikit-Learn', 'Matplotlib']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="nlp-spam-email-detection"
+    description="This project is about using AutoModelForSequenceClassification Model to classify the email spam dataset. The goal is to build a model that can accurately predict whether an email is spam or not based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in spam detection."
+    imageSrc={nlp_email}
+    link="https://github.com/Saksit-Jittasopee/nlp-spam-email-detection"
+    imageFile="nlp_email.pdf"
+    tags={['Python', 'Scikit-Learn', 'Dataset', 'Transformers', 'Pandas', 'NLP']}
+      />
+  </div>
+
+  <div className="flex justify-center"> 
+      <ProjectCard 
+    title="shirt-size-recommendation"
+    description="This project is about using deep learning to recommend shirt sizes. The goal is to build a model that can accurately predict the appropriate shirt size for a user based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in shirt size recommendation."
+    imageSrc={shirt_size}
+    link="https://github.com/Saksit-Jittasopee/shirt-size-recommendation"
+    imageFile="shirt_size_recommendation.pdf"
+    tags={['Python', 'Tensorflow', 'Keras', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification']}
       />
   </div>
 
