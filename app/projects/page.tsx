@@ -138,7 +138,7 @@ export default function Projects() {
     imageSrc={iot_project}
     link=""
     imageFile="iot_project.pdf"
-    tags={['Arduino', 'NodeRED', 'Netpie', 'Thingsboard', 'Fritzing', 'ESP32', 'Python']}
+    tags={['Arduino', 'Node-RED', 'Netpie', 'Thingsboard', 'Fritzing', 'ESP32', 'Python', 'InfluxDB', 'Telegram']}
       />
   </div>
 
