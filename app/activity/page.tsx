@@ -21,8 +21,8 @@ import ActivityCard from "@/components/ActivityCard";
 import { MdLocalActivity } from "react-icons/md";
 
 export const metadata = {
-  title: 'Projects - Saksit Jittasopee',
-  description: 'Projects Page',
+  title: 'Activity - Saksit Jittasopee',
+  description: 'Activity Page',
 }
 
 export default function Projects() {
