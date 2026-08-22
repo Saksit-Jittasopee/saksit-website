@@ -228,7 +228,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="Study Visit at Synergy Group"
-      description="I attended a study visit to the Synergy Technology Co., Ltd., for first-year students from the Bachelor of Science in Digital Science and Technology (DST Thai Program)."
+      description="I attended a study visit to the Synergy Technology Co., Ltd., for first-year students from the Bachelor of Science in Digital Science and Technology (DST Thai Program) as a part of 'Industry Problems and Experiences 1' courses. The visit mostly was about IoT & Smart Technologies talks."
       imageSrc={synergy}
         />
       </div>
@@ -260,7 +260,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="PEOPLE INNOVATE Co. Lecture"
-      description="I attended special lecture entitled “Strategic Thinking in Real Life.” by Ms. Theresa Mathawaphan, CEO and Co-founder of PEOPLE INNOVATE Co., Ltd., as the guest speaker."
+      description="I attended special lecture entitled “Strategic Thinking in Real Life.” by Ms. Theresa Mathawaphan, CEO and Co-founder of PEOPLE INNOVATE Co., Ltd., as the guest speaker. It's about a planning and strategic thinking in workplace."
       imageSrc={people_innovation}
         />
       </div>
@@ -276,7 +276,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="Mahidol AI Day"
-      description="I attended a Mahidol AI Day event which is a seminar event features by SCB InnovestX, Central Retail and more."
+      description="I attended a Mahidol AI Day event which is a seminar event features by SCB InnovestX, Central Retail and more. It's a MOU Signing between Mahidol University and other companies, held an event, and special talks about AI Topic."
       imageSrc={ai_day}
         />
       </div>
@@ -292,7 +292,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="ICT Mahidol x 1 Moby: Unlock Your Resume’s Potential: Design and Content Essentials"
-      description="I attended a special talk about designing your resume by 1Moby x ICT Mahidol."
+      description="I attended a special talk about how to designed your resume for job application or salary increased, and how does your resume look in HR view by 1Moby x ICT Mahidol. Which involved a resume presentation and suggestion for each person."
       imageSrc={event_1moby}
         />
       </div>
@@ -324,7 +324,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="IT Audit in Compliance with Cybersecurity Standard ISO/IEC 27001"
-      description="I attended a seminar about IT auditing based on the ISO/IEC 27001 standard, in collaboration with ICT Cybersecurity Club."
+      description="I attended a seminar about IT auditing based on the ISO/IEC 27001 standard, in collaboration with ICT Cybersecurity Club. Which involved a group project and problem solving."
       imageSrc={it_audit}
         />
       </div>
@@ -404,7 +404,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="Study Visit at Bank of Thailand "
-      description="I attended a study visit to the Bank of Thailand, for second-year students from the Bachelor of Science in Digital Science and Technology (DST Thai Program)."
+      description="I attended a study visit to the Bank of Thailand, for second-year students from the Bachelor of Science in Digital Science and Technology (DST Thai Program). The visit mostly talk about what is bank working behind the scenes."
       imageSrc={bank}
         />
       </div>
@@ -436,7 +436,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="TCC Group Lecture"
-      description="I attended a special lecture entitled “Smart Factory.” by TCC Technology Co., Ltd."
+      description="I attended a special lecture entitled “Smart Factory.” by TCC Technology Co., Ltd. The talk was mostly about an IoT Technologies, Smart Tools and what did TCC was about and working on. The Internship from TCC."
       imageSrc={tcc}
         />
       </div>
@@ -468,7 +468,7 @@ export default function Home() {
       <div className="flex justify-center flex-wrap"> 
         <ActivityCard 
       title="ASCE Hackathon 2026"
-      description="I participate in ASCE Hackathon 2026 organized by Siriraj Hospital X ICT Mahidol. It’s about create a model for CAC Score and submit for the most F1-Score."
+      description="I participated in ASCE Hackathon 2026 organized by Siriraj Hospital X ICT Mahidol. It’s about create a deep learning model for CAC Score and submit in streamlit for the most F1-Score. Our team finished 9th place in the event."
       imageSrc={asce}
         />
       </div>
@@ -663,7 +663,7 @@ export default function Home() {
   <div className="flex justify-center"> 
       <ProjectCard 
     title="Full-Stacks-IoT-Project"
-    description="This project is about developing a IoT Smart Devices using various software and tools."
+    description="This project is about developing an IoT Smart Devices using various software and tools from tech stacks like NodeRED, Netpie, Thingsboard, and InfluxDB from Docker to develop and Arduino to implemented."
     imageSrc={iot_project}
     link=""
     imageFile="iot_project.pdf"

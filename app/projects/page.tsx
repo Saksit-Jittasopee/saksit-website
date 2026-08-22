@@ -134,7 +134,7 @@ export default function Projects() {
   <div className="flex justify-center"> 
       <ProjectCard 
     title="Full-Stacks-IoT-Project"
-    description="This project is about developing a IoT Smart Devices using various software and tools."
+    description="This project is about developing an IoT Smart Devices using various software and tools from tech stacks like NodeRED, Netpie, Thingsboard, and InfluxDB from Docker to develop and Arduino to implemented."
     imageSrc={iot_project}
     link=""
     imageFile="iot_project.pdf"
