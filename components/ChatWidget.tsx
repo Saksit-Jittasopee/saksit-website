@@ -184,7 +184,7 @@ export default function ChatWidget() {
                 value={input || ""}
                 onChange={handleInputChange}
                 placeholder="Type a message..."
-                className="flex-1 px-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-full text-sm focus:ring-2 focus:ring-blue-500 outline-none text-black dark:text-black"
+                className="flex-1 px-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-full text-sm focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 dark:text-white placeholder:text-slate-400"
               />
               <button
                 type="submit"

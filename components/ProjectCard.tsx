@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { FaGithub } from 'react-icons/fa';
-import { FaRegImage } from "react-icons/fa6";
+import { FaRegFilePdf } from "react-icons/fa6";
+import { LuMaximize2 } from "react-icons/lu";
+import ImageModal from './ImageModal';
 
 interface ProjectCardProps {
   title: string;
@@ -12,62 +17,100 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, description, imageSrc, link, imageFile, tags }: ProjectCardProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
-    <div className="flex flex-col m-4 h-full rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:scale-102 transition-all duration-300 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-      
-      <div className="relative h-48 sm:h-56 w-full">
-        <Image
-          src={imageSrc}
-          alt={title}
-          fill 
-          style={{ objectFit: 'cover' }}
-          className="w-full h-full"
-        />
-      </div>
-
-      <div className="p-5 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
-          {title}
-        </h3>
+    <>
+      <div className="flex flex-col h-full rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 dark:border-slate-700/80 bg-white dark:bg-slate-800/90 overflow-hidden group/card">
         
-        <p className="text-sm mb-4 flex-grow line-clamp-3 text-gray-600 dark:text-gray-300">
-          {description}
-        </p>
-
-        <div className="flex flex-wrap gap-2 mb-5">
-          {tags.map((tag, index) => (
-            <span 
-              key={index} 
-              className="px-2 py-1 text-xs font-semibold text-gray-700 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-200"
-            >
-              {tag}
-            </span>
-          ))}
+        {/* Full Image Container - contain fit to show 100% of the image */}
+        <div 
+          onClick={() => setIsModalOpen(true)}
+          className="relative h-56 sm:h-64 w-full bg-slate-50 dark:bg-slate-900/60 p-3 flex items-center justify-center overflow-hidden border-b border-slate-100 dark:border-slate-700/50 cursor-pointer group"
+          title="Click to view full image"
+        >
+          <Image
+            src={imageSrc}
+            alt={title}
+            fill 
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: 'contain' }}
+            className="p-1 transition-transform duration-300 group-hover:scale-105"
+          />
+          <div className="absolute top-3 right-3 bg-slate-900/70 hover:bg-slate-900 text-white px-2.5 py-1 rounded-full text-xs font-medium flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity backdrop-blur-xs shadow-sm">
+            <LuMaximize2 size={13} />
+            <span>Full Image</span>
+          </div>
         </div>
 
-        <div className='flex flex-row'>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-medium mt-auto"
-        >
-          <FaGithub size={20} />
-          <span>View on GitHub</span>
-        </a>
+        {/* Content */}
+        <div className="p-5 sm:p-6 flex flex-col flex-grow">
+          <h3 className="text-xl font-bold mb-2.5 text-slate-900 dark:text-white line-clamp-2">
+            {title}
+          </h3>
+          
+          <p className="text-sm mb-4 flex-grow text-slate-600 dark:text-slate-300 line-clamp-3 leading-relaxed">
+            {description}
+          </p>
 
-        <a
-          href={imageFile}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-5 inline-flex items-center gap-2 text-green-600 dark:text-green-400 hover:underline font-medium mt-auto"
-        >
-          <FaRegImage size={20} />
-          <span>View Picture</span>
-        </a>
+          {/* Tags */}
+          <div className="flex flex-wrap gap-1.5 mb-5">
+            {tags.map((tag, index) => (
+              <span 
+                key={index} 
+                className="px-2.5 py-0.5 text-xs font-medium text-blue-700 bg-blue-50 border border-blue-200 rounded-md dark:bg-blue-950/40 dark:border-blue-800/50 dark:text-blue-300"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* Action Links */}
+          <div className="flex flex-wrap items-center gap-3 pt-3 border-t border-slate-100 dark:border-slate-700/50 mt-auto">
+            {link && (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 dark:bg-slate-700 dark:hover:bg-slate-600 dark:text-slate-200 transition-colors"
+              >
+                <FaGithub size={14} />
+                <span>GitHub</span>
+              </a>
+            )}
+
+            {imageFile && (
+              <a
+                href={imageFile}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:hover:bg-blue-900/50 dark:text-blue-300 transition-colors"
+              >
+                <FaRegFilePdf size={14} />
+                <span>Document</span>
+              </a>
+            )}
+
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:hover:bg-emerald-900/50 dark:text-emerald-300 transition-colors cursor-pointer"
+            >
+              <LuMaximize2 size={13} />
+              <span>Full Image</span>
+            </button>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
+
+      {/* Lightbox Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        imageSrc={imageSrc}
+        title={title}
+        subtitle={description}
+      />
+    </>
   );
 };
 
