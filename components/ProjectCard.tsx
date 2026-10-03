@@ -49,9 +49,9 @@ const ProjectCard = ({ title, description, imageSrc, link, imageFile, tags }: Pr
             {title}
           </h3>
           
-          <p className="text-sm mb-4 flex-grow text-slate-600 dark:text-slate-300 line-clamp-3 leading-relaxed">
-            {description}
-          </p>
+          <div className="h-28 sm:h-32 overflow-y-auto card-scroll pr-1.5 mb-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p>{description}</p>
+          </div>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-1.5 mb-5">

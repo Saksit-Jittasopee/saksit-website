@@ -48,9 +48,9 @@ const CertificateCard = ({ title, description, imageSrc, link, imageFile }: Cert
             {title}
           </h3>
           
-          <p className="text-sm mb-5 flex-grow text-slate-600 dark:text-slate-300 line-clamp-3 leading-relaxed">
-            {description}
-          </p>
+          <div className="h-28 sm:h-32 overflow-y-auto card-scroll pr-1.5 mb-5 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p>{description}</p>
+          </div>
 
           {/* Action Links */}
           <div className="flex flex-wrap items-center gap-3 pt-3 border-t border-slate-100 dark:border-slate-700/50 mt-auto">
