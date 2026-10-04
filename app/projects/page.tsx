@@ -29,7 +29,7 @@ export default function Projects() {
       description: "I'm a wrestling fan. I love watching professional wrestling so I made this website to show the current champions in major promotions like (WWE, NXT, AEW, etc.) by using React & Vite and use GitHub to deploy. This is my very first web project so It may look simple and basic but I am very proud with this work.",
       imageSrc: currentchamp1,
       link: "https://saksit-jittasopee.github.io/current-champions/",
-      imageFile: "Current_Wrestling_Champions.pdf",
+      imageFile: "/assets/Projects/Current_Wrestling_Champions.pdf",
       tags: ['React', 'JavaScript', 'HTML / CSS', 'Vite'],
     },
     {
@@ -37,7 +37,7 @@ export default function Projects() {
       description: "This is an in-class lab assignment for 'Applied Statistics for Computing' by using R with the group of 2. We have assigned an assignment to make histogram, scatterplot, qqplot, boxplot and many more using R to read a data from CSV file.",
       imageSrc: teasmoker,
       link: "https://github.com/Saksit-Jittasopee/R-Programming-Lab-Lesson",
-      imageFile: "R-Project.pdf",
+      imageFile: "/assets/Projects/R-Project.pdf",
       tags: ['R', 'Data Science', 'ggplot2', 'tidyverse'],
     },
     {
@@ -45,7 +45,7 @@ export default function Projects() {
       description: "This is a project for 'Web Technologies and Application' Class. We made the CD-Keys Website using React, Vite, and JavaScript to develop the frontend part and Node.Js and Javascript to develop backend and using MySQL as Database for this project. My role in this project was backend part doing the Authentication using JSON Web Token, Steam API Players Count, Search, MySQL Databases, and also the frontend part by using API to connect with backend and databases.",
       imageSrc: webapp1,
       link: "https://github.com/Saksit-Jittasopee/Ayema5kon-project",
-      imageFile: "Ayema5kon.pdf",
+      imageFile: "/assets/Projects/Ayema5kon.pdf",
       tags: ['React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL'],
     },
     {
@@ -53,7 +53,7 @@ export default function Projects() {
       description: "This project using Python libraries (Pandas, Matplotlib) to create each type of charts from movies.csv like Bar Chart, Horizontal Bar Chart, Scatter Plot, Pie Chart, Line Chart, and Histogram.",
       imageSrc: bar,
       link: "https://github.com/Saksit-Jittasopee/python-charts",
-      imageFile: "Python-Chart.pdf",
+      imageFile: "/assets/Projects/Python-Chart.pdf",
       tags: ['Python', 'Pandas', 'Matplotlib'],
     },
     {
@@ -61,7 +61,7 @@ export default function Projects() {
       description: "My friend Chanasorn / Sugus. He's travelled a lot. So, we make this project to collect his data and making charts to show the results of his data in 2025 by using Python, Pandas, NumPy, Matplotlib, Scikit-Learn for this project.",
       imageSrc: chanasorntravel,
       link: "https://github.com/Saksit-Jittasopee/chanasorn-travel-2025",
-      imageFile: "chanasorn-travel-2025.pdf",
+      imageFile: "/assets/Projects/chanasorn-travel-2025.pdf",
       tags: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-Learn', 'Linear-Regression'],
     },
     {
@@ -69,7 +69,7 @@ export default function Projects() {
       description: "This project A discord bot that remind class every weekday (Monday-Friday) at 7 AM. This bot is made with Go and Discord. You can invite this bot to your server and use it for free.",
       imageSrc: monday,
       link: "https://github.com/Saksit-Jittasopee/class-discord-bot",
-      imageFile: "class-discord-bot.pdf",
+      imageFile: "/assets/Projects/class-discord-bot.pdf",
       tags: ['Go', 'Bot', 'Discord Bot'],
     },
     {
@@ -77,7 +77,7 @@ export default function Projects() {
       description: "This project is about using deep learning to classify the gender of people in photo feed using OpenCV's DNN module. The project utilizes a pre-trained Caffe model for face detection and a trained PyTorch model using mobilenet_v2 model to classify gender. The dataset is from saadpd's Kaggle (Men-Women Classification). The application captures video from the webcam, detects faces, and classifies the gender of the detected faces, displaying the results and confidence in photo using streamlit to deploy the web application.",
       imageSrc: gender,
       link: "https://github.com/Saksit-Jittasopee/gender-classification-deep-learning",
-      imageFile: "gender-classification-deep-learning.pdf",
+      imageFile: "/assets/Projects/gender-classification-deep-learning.pdf",
       tags: ['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification', 'Neural Networks', 'Jupyter Notebook'],
     },
     {
@@ -85,7 +85,7 @@ export default function Projects() {
       description: "This project is about using deep learning to predict the age of people in pictures using a CNN (Convolutional Neural Network) and PyTorch. The output layer is a linear regression model. The dataset is from jangedoo's Kaggle (UTKFace). The application captures video from the webcam, detects faces, and predicts the age of the detected faces using CascadeClassifier (haarcascade_frontalface_default) from OpenCV, displaying the results using Streamlit to deploy the web application.",
       imageSrc: age,
       link: "https://github.com/Saksit-Jittasopee/age-prediction-deep-learning",
-      imageFile: "age_prediction.pdf",
+      imageFile: "/assets/Projects/age_prediction.pdf",
       tags: ['Python', 'OpenCV', 'PyTorch', 'Streamlit', 'Machine Learning', 'Deep Learning', 'CNN', 'Neural Networks', 'Jupyter Notebook', 'Linear Regression'],
     },
     {
@@ -93,7 +93,7 @@ export default function Projects() {
       description: "This project is about developing a mobile application that provides real-time air quality information and weather updates for users in their respective countries. using Flutter and Dart in frontend part and Javascript and Node.js in backend part. Also, PostgreSQL and Prisma are used for database management. Oracle Cloud is used for deployment.",
       imageSrc: ikillair,
       link: "https://github.com/Saksit-Jittasopee/ITDS283-IKillAir-6787015-6787077",
-      imageFile: "ITDS283_Sec2_Group08_Presentation.pdf",
+      imageFile: "/assets/Projects/ITDS283_Sec2_Group08_Presentation.pdf",
       tags: ['Flutter', 'Dart', 'JavaScript', 'Node.Js', 'PostgreSQL', 'Prisma', 'Oracle Cloud'],
     },
     {
@@ -101,7 +101,7 @@ export default function Projects() {
       description: "This project is about developing an IoT Smart Devices using various software and tools from tech stacks like NodeRED, Netpie, Thingsboard, and InfluxDB from Docker to develop and Arduino to implemented.",
       imageSrc: iot_project,
       link: "",
-      imageFile: "iot_project.pdf",
+      imageFile: "/assets/Projects/iot_project.pdf",
       tags: ['Arduino', 'Node-RED', 'Netpie', 'Thingsboard', 'Fritzing', 'ESP32', 'Python', 'InfluxDB', 'Telegram'],
     },
     {
@@ -109,7 +109,7 @@ export default function Projects() {
       description: "This project is about using deep learning to classify the healthcare insurance fraud detection dataset. The goal is to build a model that can accurately predict whether a healthcare insurance claim is fraudulent or not based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in fraud detection.",
       imageSrc: healthcare,
       link: "https://github.com/Saksit-Jittasopee/healthcare-insurance-fraud-detection",
-      imageFile: "healthcare_fraud_detection.pdf",
+      imageFile: "/assets/Projects/healthcare_fraud_detection.pdf",
       tags: ['Python', 'Tensorflow', 'Keras', 'Numpy', 'Pandas', 'Machine Learning', 'Deep Learning', 'Scikit-Learn', 'Matplotlib'],
     },
     {
@@ -117,7 +117,7 @@ export default function Projects() {
       description: "This project is about using AutoModelForSequenceClassification Model to classify the email spam dataset. The goal is to build a model that can accurately predict whether an email is spam or not based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in spam detection.",
       imageSrc: nlp_email,
       link: "https://github.com/Saksit-Jittasopee/nlp-spam-email-detection",
-      imageFile: "nlp_email.pdf",
+      imageFile: "/assets/Projects/nlp_email.pdf",
       tags: ['Python', 'Scikit-Learn', 'Dataset', 'Transformers', 'Pandas', 'NLP'],
     },
     {
@@ -125,7 +125,7 @@ export default function Projects() {
       description: "This project is about using deep learning to recommend shirt sizes. The goal is to build a model that can accurately predict the appropriate shirt size for a user based on the features provided in the dataset. The project involves data preprocessing, model building, training, and evaluation to achieve high accuracy in shirt size recommendation.",
       imageSrc: shirt_size,
       link: "https://github.com/Saksit-Jittasopee/shirt-size-recommendation",
-      imageFile: "shirt_size_recommendation.pdf",
+      imageFile: "/assets/Projects/shirt_size_recommendation.pdf",
       tags: ['Python', 'Tensorflow', 'Keras', 'Streamlit', 'Machine Learning', 'Deep Learning', 'Classification'],
     },
   ];
