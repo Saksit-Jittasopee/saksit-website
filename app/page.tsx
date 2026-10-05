@@ -32,6 +32,7 @@ import datascience101 from "@/public/assets/Certificate/DataScience101.png";
 import databricksai from "@/public/assets/Certificate/DataBricks_GenAI_Certificate.png";
 import databricksdataen from "@/public/assets/Certificate/Databricks_Data_Engineering_with_Databricks-1.png";
 import databricksdevops from "@/public/assets/Certificate/Databricks_DevOps_Data_Engineering-1.png";
+import awsfoundation from "@/public/assets/Certificate/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20260910-20-7qwayq-1.png";
 
 // Projects
 import currentchamp1 from "@/public/assets/Projects/Current_Wrestling_Champions_1.png";
@@ -307,6 +308,13 @@ export default function Home() {
       imageSrc: databricksdevops,
       link: "https://credentials.databricks.com/3dcf15c1-a6ab-4ecd-b9d6-5d4f476c1de2#acc.6fhODaqB",
       imageFile: "/assets/Certificate/Databricks_DevOps_Data_Engineering.pdf",
+    },
+    {
+      title: "AWS Academy Graduate: Cloud Foundations",
+      description: "This course provides a comprehensive introduction to cloud computing concepts, services, and best practices. You will learn about the fundamentals of AWS, including compute, storage, networking, and security services. It's a part of 'Cloud Computing Systems and Applications' course from ICT Mahidol.",
+      imageSrc: awsfoundation,
+      link: "https://www.credly.com/badges/1833807d-86f6-4d6a-bf0d-03b317823606",
+      imageFile: "/assets/Certificate/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20260910-20-7qwayq.pdf",
     },
   ];
 
