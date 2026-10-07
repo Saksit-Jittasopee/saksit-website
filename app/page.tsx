@@ -10,6 +10,7 @@ import ProjectCard from '@/components/ProjectCard';
 import CertificateCard from "@/components/CertificateCard";
 import ActivityCard from "@/components/ActivityCard";
 import ContactMapLoader from "@/components/ContactMapLoader";
+import SkillIcon from "@/components/SkillIcon";
 
 // Assets
 import profileImg from "@/public/assets/Home/image.jpg";
@@ -496,19 +497,19 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white">Languages</h3>
             </div>
-            <div className="flex flex-wrap gap-3 text-slate-700 dark:text-slate-300">
-              <a href="https://www.python.org/" title="Python" className="hover:text-blue-600 transition-colors"><FaPython size={26}/></a>
-              <a href="https://www.java.com/" title="Java" className="hover:text-red-600 transition-colors"><FaJava size={26}/></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML5" className="hover:text-orange-500 transition-colors"><FaHtml5 size={26}/></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS3" className="hover:text-blue-500 transition-colors"><IoLogoCss3 size={26}/></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript" className="hover:text-amber-500 transition-colors"><IoLogoJavascript size={26}/></a>
-              <a href="https://www.typescriptlang.org/" title="TypeScript" className="hover:text-blue-600 transition-colors"><SiTypescript size={24}/></a>
-              <a href="https://learn.microsoft.com/en-us/cpp/c-language/" title="C" className="hover:text-blue-700 transition-colors"><SiC size={24}/></a>
-              <a href="https://cplusplus.com/" title="C++" className="hover:text-blue-600 transition-colors"><SiCplusplus size={24}/></a>
-              <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" title="C#" className="hover:text-purple-600 transition-colors"><TbBrandCSharp size={26}/></a>
-              <a href="https://www.r-project.org/" title="R" className="hover:text-blue-700 transition-colors"><SiR size={24}/></a>
-              <a href="https://www.mysql.com/" title="SQL / MySQL" className="hover:text-cyan-600 transition-colors"><FaDatabase size={24}/></a>
-              <a href="https://golang.org/" title="Go" className="hover:text-cyan-500 transition-colors"><FaGolang size={26}/></a>
+            <div className="flex flex-wrap gap-2 text-slate-700 dark:text-slate-300">
+              <SkillIcon name="Python" href="https://www.python.org/" colorClass="hover:text-blue-600" icon={<FaPython size={26}/>} />
+              <SkillIcon name="Java" href="https://www.java.com/" colorClass="hover:text-red-600" icon={<FaJava size={26}/>} />
+              <SkillIcon name="HTML5" href="https://developer.mozilla.org/en-US/docs/Web/HTML" colorClass="hover:text-orange-500" icon={<FaHtml5 size={26}/>} />
+              <SkillIcon name="CSS3" href="https://developer.mozilla.org/en-US/docs/Web/CSS" colorClass="hover:text-blue-500" icon={<IoLogoCss3 size={26}/>} />
+              <SkillIcon name="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" colorClass="hover:text-amber-500" icon={<IoLogoJavascript size={26}/>} />
+              <SkillIcon name="TypeScript" href="https://www.typescriptlang.org/" colorClass="hover:text-blue-600" icon={<SiTypescript size={24}/>} />
+              <SkillIcon name="C" href="https://learn.microsoft.com/en-us/cpp/c-language/" colorClass="hover:text-blue-700" icon={<SiC size={24}/>} />
+              <SkillIcon name="C++" href="https://cplusplus.com/" colorClass="hover:text-blue-600" icon={<SiCplusplus size={24}/>} />
+              <SkillIcon name="C#" href="https://learn.microsoft.com/en-us/dotnet/csharp/" colorClass="hover:text-purple-600" icon={<TbBrandCSharp size={26}/>} />
+              <SkillIcon name="R" href="https://www.r-project.org/" colorClass="hover:text-blue-700" icon={<SiR size={24}/>} />
+              <SkillIcon name="SQL / MySQL" href="https://www.mysql.com/" colorClass="hover:text-cyan-600" icon={<FaDatabase size={24}/>} />
+              <SkillIcon name="Go" href="https://golang.org/" colorClass="hover:text-cyan-500" icon={<FaGolang size={26}/>} />
             </div>
           </div>
 
@@ -520,13 +521,13 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white">AI / Data Science</h3>
             </div>
-            <div className="flex flex-wrap gap-3 text-slate-700 dark:text-slate-300">
-              <a href="https://numpy.org/" title="NumPy" className="hover:text-blue-500 transition-colors"><SiNumpy size={24}/></a>
-              <a href="https://pandas.pydata.org/" title="Pandas" className="hover:text-indigo-500 transition-colors"><SiPandas size={24}/></a>
-              <a href="https://scikit-learn.org/" title="Scikit-Learn" className="hover:text-amber-600 transition-colors"><SiScikitlearn size={24}/></a>
-              <a href="https://pytorch.org/" title="PyTorch" className="hover:text-rose-500 transition-colors"><SiPytorch size={24}/></a>
-              <a href="https://www.tensorflow.org/" title="TensorFlow" className="hover:text-orange-500 transition-colors"><SiTensorflow size={24}/></a>
-              <a href="https://opencv.org/" title="OpenCV" className="hover:text-emerald-500 transition-colors"><SiOpencv size={24}/></a>
+            <div className="flex flex-wrap gap-2 text-slate-700 dark:text-slate-300">
+              <SkillIcon name="NumPy" href="https://numpy.org/" colorClass="hover:text-blue-500" icon={<SiNumpy size={24}/>} />
+              <SkillIcon name="Pandas" href="https://pandas.pydata.org/" colorClass="hover:text-indigo-500" icon={<SiPandas size={24}/>} />
+              <SkillIcon name="Scikit-Learn" href="https://scikit-learn.org/" colorClass="hover:text-amber-600" icon={<SiScikitlearn size={24}/>} />
+              <SkillIcon name="PyTorch" href="https://pytorch.org/" colorClass="hover:text-rose-500" icon={<SiPytorch size={24}/>} />
+              <SkillIcon name="TensorFlow" href="https://www.tensorflow.org/" colorClass="hover:text-orange-500" icon={<SiTensorflow size={24}/>} />
+              <SkillIcon name="OpenCV" href="https://opencv.org/" colorClass="hover:text-emerald-500" icon={<SiOpencv size={24}/>} />
             </div>
           </div>
 
@@ -538,13 +539,13 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white">Web Frameworks</h3>
             </div>
-            <div className="flex flex-wrap gap-3 text-slate-700 dark:text-slate-300">
-              <a href="https://react.dev/" title="React" className="hover:text-cyan-400 transition-colors"><FaReact size={26}/></a>
-              <a href="https://nextjs.org/" title="Next.js" className="hover:text-slate-900 dark:hover:text-white transition-colors"><RiNextjsFill size={26}/></a>
-              <a href="https://nodejs.org/" title="Node.js" className="hover:text-emerald-600 transition-colors"><FaNodeJs size={26}/></a>
-              <a href="https://expressjs.com/" title="Express" className="hover:text-slate-700 dark:hover:text-white transition-colors"><SiExpress size={24}/></a>
-              <a href="https://axios-http.com/" title="Axios" className="hover:text-purple-600 transition-colors"><SiAxios size={24}/></a>
-              <a href="https://tailwindcss.com/" title="Tailwind CSS" className="hover:text-cyan-500 transition-colors"><SiTailwindcss size={24}/></a>
+            <div className="flex flex-wrap gap-2 text-slate-700 dark:text-slate-300">
+              <SkillIcon name="React" href="https://react.dev/" colorClass="hover:text-cyan-400" icon={<FaReact size={26}/>} />
+              <SkillIcon name="Next.js" href="https://nextjs.org/" colorClass="hover:text-slate-900 dark:hover:text-white" icon={<RiNextjsFill size={26}/>} />
+              <SkillIcon name="Node.js" href="https://nodejs.org/" colorClass="hover:text-emerald-600" icon={<FaNodeJs size={26}/>} />
+              <SkillIcon name="Express" href="https://expressjs.com/" colorClass="hover:text-slate-700 dark:hover:text-white" icon={<SiExpress size={24}/>} />
+              <SkillIcon name="Axios" href="https://axios-http.com/" colorClass="hover:text-purple-600" icon={<SiAxios size={24}/>} />
+              <SkillIcon name="Tailwind CSS" href="https://tailwindcss.com/" colorClass="hover:text-cyan-500" icon={<SiTailwindcss size={24}/>} />
             </div>
           </div>
 
@@ -556,14 +557,14 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white">Tools & Analytics</h3>
             </div>
-            <div className="flex flex-wrap gap-3 text-slate-700 dark:text-slate-300">
-              <a href="https://github.com/Saksit-Jittasopee" title="GitHub" className="hover:text-slate-900 dark:hover:text-white transition-colors"><FaGithub size={24}/></a>
-              <a href="https://visualstudio.microsoft.com/" title="VS Code" className="hover:text-blue-500 transition-colors"><DiVisualstudio size={26}/></a>
-              <a href="https://www.microsoft.com/en-us/microsoft-365/excel" title="Excel" className="hover:text-emerald-600 transition-colors"><RiFileExcel2Fill size={24}/></a>
-              <a href="https://lookerstudio.google.com/" title="Looker Studio" className="hover:text-blue-500 transition-colors"><SiLooker size={24}/></a>
-              <a href="https://sheets.google.com/" title="Google Sheets" className="hover:text-emerald-500 transition-colors"><SiGooglesheets size={24}/></a>
-              <a href="https://www.tableau.com/" title="Tableau" className="hover:text-blue-600 transition-colors"><SiTableau size={24}/></a>
-              <a href="https://www.postman.com/" title="Postman" className="hover:text-orange-500 transition-colors"><SiPostman size={24}/></a>
+            <div className="flex flex-wrap gap-2 text-slate-700 dark:text-slate-300">
+              <SkillIcon name="GitHub" href="https://github.com/Saksit-Jittasopee" colorClass="hover:text-slate-900 dark:hover:text-white" icon={<FaGithub size={24}/>} />
+              <SkillIcon name="VS Code" href="https://visualstudio.microsoft.com/" colorClass="hover:text-blue-500" icon={<DiVisualstudio size={26}/>} />
+              <SkillIcon name="Excel" href="https://www.microsoft.com/en-us/microsoft-365/excel" colorClass="hover:text-emerald-600" icon={<RiFileExcel2Fill size={24}/>} />
+              <SkillIcon name="Looker Studio" href="https://lookerstudio.google.com/" colorClass="hover:text-blue-500" icon={<SiLooker size={24}/>} />
+              <SkillIcon name="Google Sheets" href="https://sheets.google.com/" colorClass="hover:text-emerald-500" icon={<SiGooglesheets size={24}/>} />
+              <SkillIcon name="Tableau" href="https://www.tableau.com/" colorClass="hover:text-blue-600" icon={<SiTableau size={24}/>} />
+              <SkillIcon name="Postman" href="https://www.postman.com/" colorClass="hover:text-orange-500" icon={<SiPostman size={24}/>} />
             </div>
           </div>
         </div>
